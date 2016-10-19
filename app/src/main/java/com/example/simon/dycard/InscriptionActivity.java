@@ -24,7 +24,7 @@ public class InscriptionActivity extends AppCompatActivity {
 
     private EditText Pseudo, Password, Password2, Email;
     private String pseudo, password, password2, email;
-    private String login_url = "http://192.168.1.34/android/register.php";
+    private String login_url = "/register.php";
     private AlertDialog.Builder builder;
 
     @Override

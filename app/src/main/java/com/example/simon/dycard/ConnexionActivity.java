@@ -26,7 +26,7 @@ public class ConnexionActivity extends AppCompatActivity {
 
     private EditText Pseudo, Password;
     private String pseudo, password;
-    private String login_url = "http://192.168.1.34/android/login.php";
+    private String login_url = "/login.php";
     private AlertDialog.Builder builder;
 
     @Override

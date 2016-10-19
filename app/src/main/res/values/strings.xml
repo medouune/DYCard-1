@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">DYCard</string>
+    <string name="logo">Logo</string>
+
+    <!--Main Activity-->
+    <string name="connexion">Se connecter</string>
+    <string name="inscription">S\'inscrire</string>
+    <string name="connexionFacebook">Se connecter avec facebook</string>
+    <string name="cg">Conditions Générales</string>
+
+    <!--Inscription Activity-->
+    <string name="pseudo">Pseudo</string>
+    <string name="mdp">Mot de passe</string>
+    <string name="mdpConfirm">Confirmer le mot de passe</string>
+    <string name="email">Email</string>
+    <string name="mdpDifferents">Les mots de passe sont différents.</string>
+
+    <!--Connexion Activity-->
+    <string name="erreurFormulaire">Une erreur c\'est produite.</string>
+    <string name="champsVides">Veuillez remplir tous les champs.</string>
+    <string name="erreurLogin">Erreur de connexion</string>
+    <string name="connectionReussie">Connection Réussie !</string>
+    <string name="erreur">Erreur</string>
+
+</resources>

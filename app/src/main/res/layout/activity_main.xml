@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.simon.dycard.MainActivity"
+    android:weightSum="1"
+    android:gravity="top"
+    android:background="@color/background">
+
+    <ImageView
+        android:layout_width="236dp"
+        android:layout_height="217dp"
+        app:srcCompat="@drawable/logo_dycard"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/logo"/>
+
+    <Button
+        android:text="@string/connexion"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:drawable/btn_default"
+        android:onClick="connection"/>
+
+    <Button
+        android:text="@string/inscription"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:drawable/btn_default"
+        android:onClick="inscription"/>
+
+    <Button
+        android:text="@string/connexionFacebook"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:drawable/btn_default" />
+
+    <TextView
+        android:text="@string/cg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/textView"
+        android:gravity="bottom|center"
+        android:layout_weight="1" />
+</LinearLayout>

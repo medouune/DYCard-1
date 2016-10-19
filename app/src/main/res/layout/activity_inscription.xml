@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inscription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+    tools:context="com.example.simon.dycard.InscriptionActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/pseudo"
+        android:ems="10"
+        android:id="@+id/inscription_editText_pseudo"
+        android:maxLines="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/mdp"
+        android:ems="10"
+        android:id="@+id/inscription_editText_password"
+        android:maxLines="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/mdpConfirm"
+        android:ems="10"
+        android:id="@+id/inscription_editText_password2"
+        android:maxLines="1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:ems="10"
+        android:id="@+id/inscription_editText_email"
+        android:maxLines="1" />
+
+    <Button
+        android:text="@string/inscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inscription_bouton_inscrire"
+        android:onClick="sendInscription"/>
+
+    <TextView
+        android:text="@string/cg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center"
+        android:id="@+id/inscription_textView_conditionsGenerales" />
+
+</LinearLayout>

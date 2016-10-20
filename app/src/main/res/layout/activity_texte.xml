@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_texte"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.simon.dycard.activity_texte">
+
+    <TextView
+        android:text="Etape 3: Ecris ton texte"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:text="Tapez votre texte ici"
+        android:id="@+id/Tapez votre texte ici"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="10sp"
+        android:background="@android:drawable/spinner_background"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/Zoomer1"
+        android:layout_marginTop="22dp" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/seekBar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="21dp"
+        android:id="@+id/Précédent"
+        android:layout_marginBottom="21dp"
+        android:text="Précédent"
+        android:background="@android:color/holo_blue_dark"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_light"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/Prix"
+        android:layout_alignStart="@+id/seekBar" />
+
+    <Button
+        android:text="Suivant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Suivant"
+        android:layout_marginRight="55dp"
+        android:background="@android:color/holo_blue_dark"
+        android:textSize="14sp"
+        android:textColor="@android:color/background_light"
+        android:layout_alignBaseline="@+id/Précédent"
+        android:layout_alignBottom="@+id/Précédent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="69dp" />
+
+    <TextView
+        android:text="Prix"
+        android:layout_width="100dp"
+        android:id="@+id/Prix"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_plus"
+        android:id="@+id/Zoomer1"
+        android:layout_alignTop="@+id/Zoomer2"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/background_light" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_minus"
+        android:id="@+id/Zoomer2"
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/Tapez votre texte ici"
+        android:layout_toStartOf="@+id/Prix"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/background_light" />
+
+
+</RelativeLayout>

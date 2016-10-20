@@ -1,7 +1,9 @@
 package com.example.simon.dycard;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class Etape1_Activity extends AppCompatActivity {
 
@@ -9,5 +11,10 @@ public class Etape1_Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_etape1_);
+    }
+
+    public void creerCarte(View v) {
+        Intent intent = new Intent(Etape1_Activity.this, Images_Activity.class);
+        startActivity(intent);
     }
 }

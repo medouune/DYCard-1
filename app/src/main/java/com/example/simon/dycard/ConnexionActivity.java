@@ -105,7 +105,7 @@ public class ConnexionActivity extends AppCompatActivity {
     }
 
     public void suivant(View v) {
-        Intent intent = new Intent(ConnexionActivity.this, activity_destinataire.class);
+        Intent intent = new Intent(ConnexionActivity.this, Etape1_Activity.class);
         startActivity(intent);
     }
 }

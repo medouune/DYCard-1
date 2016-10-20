@@ -28,7 +28,7 @@
 
     <TextView
         android:text="Tapez votre texte ici"
-        android:id="@+id/Tapez votre texte ici"
+        android:id="@+id/Tapez_votre_texte_ici"
         android:textStyle="normal|bold"
         android:textAlignment="center"
         android:fontFamily="monospace"
@@ -54,7 +54,7 @@
         android:layout_marginStart="21dp"
         android:id="@+id/Précédent"
         android:layout_marginBottom="21dp"
-        android:text="Précédent"
+        android:text="Precedent"
         android:background="@android:color/holo_blue_dark"
         android:fontFamily="sans-serif-medium"
         android:textSize="14sp"
@@ -105,7 +105,7 @@
         app:srcCompat="@android:drawable/btn_minus"
         android:id="@+id/Zoomer2"
         android:layout_marginEnd="13dp"
-        android:layout_below="@+id/Tapez votre texte ici"
+        android:layout_below="@+id/Tapez_votre_texte_ici"
         android:layout_toStartOf="@+id/Prix"
         android:layout_marginTop="23dp"
         android:background="@android:color/background_light" />

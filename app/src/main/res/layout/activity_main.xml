@@ -44,7 +44,8 @@
         android:layout_width="238dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:background="@android:drawable/btn_default" />
+        android:background="@android:drawable/btn_default"
+        android:onClick="connexionFacebook"/>
 
     <TextView
         android:text="@string/cg"

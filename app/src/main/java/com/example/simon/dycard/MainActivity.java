@@ -22,4 +22,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ConnexionActivity.class);
         startActivity(intent);
     }
+
+    public void connexionFacebook(View v) {
+        Intent intent = new Intent(this, activity_destinataire.class);
+        startActivity(intent);
+    }
 }

@@ -12,7 +12,7 @@
     tools:context="com.example.simon.dycard.activity_destinataire">
 
     <Button
-        android:text="Envoyer ma carte à ce(s) destinataire(s)"
+        android:text="@string/envoyer_ma_carte_ce_s_destinataire_s"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
@@ -23,7 +23,7 @@
         android:layout_toEndOf="@+id/button2" />
 
     <Button
-        android:text="Supprimer ce(s) destinataire(s) de mes historiques"
+        android:text="@string/supprimer_ce_s_destinataire_s_de_mes_historiques"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button5"
@@ -32,7 +32,7 @@
         android:layout_alignStart="@+id/button" />
 
     <TextView
-        android:text="Selectionne le(s) destinataire(s)"
+        android:text="@string/selectionne_le_s_destinataire_s"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="34dp"
@@ -43,7 +43,7 @@
         android:layout_alignParentStart="true" />
 
     <Button
-        android:text="Précédent"
+        android:text="@string/pr_c_dent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
@@ -52,7 +52,7 @@
         android:layout_marginStart="33dp" />
 
     <Button
-        android:text="Enregistrer un destinataire"
+        android:text="@string/enregistrer_un_destinataire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button3"

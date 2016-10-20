@@ -21,5 +21,10 @@
     <string name="erreurLogin">Erreur de connexion</string>
     <string name="connectionReussie">Connection Réussie !</string>
     <string name="erreur">Erreur</string>
+    <string name="enregistrer_un_destinataire">Enregistrer un destinataire</string>
+    <string name="envoyer_ma_carte_ce_s_destinataire_s">Envoyer ma carte à ce(s) destinataire(s)</string>
+    <string name="pr_c_dent">Précédent</string>
+    <string name="selectionne_le_s_destinataire_s">Selectionne le(s) destinataire(s)</string>
+    <string name="supprimer_ce_s_destinataire_s_de_mes_historiques">Supprimer ce(s) destinataire(s) de mes historiques</string>
 
 </resources>

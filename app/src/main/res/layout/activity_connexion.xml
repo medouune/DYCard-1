@@ -37,6 +37,12 @@
         android:id="@+id/btnConnexion"
         style="@style/button" />
 
+    <Button
+        android:text="Suivant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="suivant"/>
+
     <TextView
         android:text="@string/cg"
         android:layout_width="match_parent"

@@ -103,4 +103,9 @@ public class ConnexionActivity extends AppCompatActivity {
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }
+
+    public void suivant(View v) {
+        Intent intent = new Intent(ConnexionActivity.this, activity_destinataire.class);
+        startActivity(intent);
+    }
 }

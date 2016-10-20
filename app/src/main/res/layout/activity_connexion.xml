@@ -13,6 +13,11 @@
     tools:context="com.example.simon.dycard.ConnexionActivity"
     android:baselineAligned="false">
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,17 +42,22 @@
         android:id="@+id/btnConnexion"
         style="@style/button" />
 
-    <Button
-        android:text="Suivant"
+    <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <Button
+        android:text="Suivant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
         android:onClick="suivant"/>
 
     <TextView
         android:text="@string/cg"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:id="@+id/textView3"
-        android:layout_weight="1"
         android:gravity="bottom|center" />
 </LinearLayout>

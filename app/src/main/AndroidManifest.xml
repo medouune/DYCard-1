@@ -23,7 +23,8 @@
         <activity android:name=".activity_destinataire" />
         <activity android:name=".activity_texte" />
         <activity android:name=".Etape1_Activity" />
-        <activity android:name=".Images_Activity"></activity>
+        <activity android:name=".Images_Activity" />
+        <activity android:name=".PhotoActivity"></activity>
     </application>
 
 </manifest>

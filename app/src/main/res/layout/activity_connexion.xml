@@ -48,7 +48,7 @@
         android:layout_weight="0.5"/>
 
     <Button
-        android:text="Suivant"
+        android:text="@string/buttonSuivant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"

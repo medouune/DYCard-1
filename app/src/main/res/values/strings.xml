@@ -2,6 +2,10 @@
     <string name="app_name">DYCard</string>
     <string name="logo">Logo</string>
 
+    <!--Button-->
+    <string name="buttonPrecedent">Precedent</string>
+    <string name="buttonSuivant">Suivant</string>
+
     <!--Main Activity-->
     <string name="connexion">Se connecter</string>
     <string name="inscription">S\'inscrire</string>
@@ -41,8 +45,9 @@
     <!--Destinataire Activity-->
     <string name="enregistrer_un_destinataire">Enregistrer un destinataire</string>
     <string name="envoyer_ma_carte_ces_destinataires">Envoyer ma carte à ce(s) destinataire(s)</string>
-    <string name="pr_c_dent">Précédent</string>
     <string name="selectionne_les_destinataires">Selectionne le(s) destinataire(s)</string>
     <string name="supprimer_ces_destinataires_de_mes_historiques">Supprimer ce(s) destinataire(s) de mes historiques</string>
 
+    <!--Image Activity-->
+    <string name="etape1">Etape 1</string>
 </resources>

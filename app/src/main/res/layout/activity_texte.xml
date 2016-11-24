@@ -103,9 +103,9 @@
         android:textColor="@android:color/background_dark"
         android:textStyle="normal|bold"
         android:id="@+id/textView2"
-        android:layout_above="@+id/Tapezvotretexteici"
+        android:layout_below="@+id/seekBar"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="33dp" />
+        android:layout_marginTop="38dp" />
 
 
 </RelativeLayout>

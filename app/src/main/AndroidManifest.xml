@@ -22,7 +22,7 @@
         <activity android:name=".FirstActivity" />
         <activity android:name=".activity_destinataire" />
         <activity android:name=".activity_texte" />
-        <activity android:name=".Mail"></activity>
+        <activity android:name=".Activity_mail"></activity>
     </application>
 
 </manifest>

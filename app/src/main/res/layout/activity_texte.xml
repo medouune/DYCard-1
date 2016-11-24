@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="62dp"
         android:layout_marginStart="21dp"
-        android:id="@+id/Précédent"
+        android:id="@+id/Precedent"
         android:layout_marginBottom="21dp"
         android:text="Précédent"
         android:background="@android:color/holo_blue_dark"
@@ -43,8 +43,8 @@
         android:background="@android:color/holo_blue_dark"
         android:textSize="14sp"
         android:textColor="@android:color/background_light"
-        android:layout_alignBaseline="@+id/Précédent"
-        android:layout_alignBottom="@+id/Précédent"
+        android:layout_alignBaseline="@+id/Precedent"
+        android:layout_alignBottom="@+id/Precedent"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="69dp" />
 
@@ -90,7 +90,7 @@
         android:layout_width="400dp"
         android:layout_height="200dp"
         android:layout_above="@+id/Zoomer2"
-        android:layout_toEndOf="@+id/Précédent"
+        android:layout_toEndOf="@+id/Precedent"
         android:layout_marginBottom="27dp" />
 
     <TextView
@@ -106,6 +106,7 @@
         android:layout_below="@+id/seekBar"
         android:layout_alignParentStart="true"
         android:layout_marginTop="38dp" />
+
 
 
 </RelativeLayout>

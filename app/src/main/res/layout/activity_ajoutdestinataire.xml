@@ -83,8 +83,8 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Ajouter ce destinataire"
         android:layout_below="@+id/editText8"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:text="Ajouter ce destinataire" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

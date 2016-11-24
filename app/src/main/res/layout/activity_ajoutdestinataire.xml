@@ -83,7 +83,7 @@
         android:text="Ajouter ce destinataire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="51dp"
         android:id="@+id/button4"
         android:layout_below="@+id/editText8"
         android:layout_centerHorizontal="true" />

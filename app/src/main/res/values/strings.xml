@@ -50,4 +50,21 @@
 
     <!--Image Activity-->
     <string name="etape1">Etape 1</string>
+
+    <!--Ajout destinataire Activity-->
+    <string name="nom">Nom</string>
+    <string name="prenom">Prenom</string>
+    <string name="adresse">Adresse</string>
+    <string name="codepostal">Code Postal</string>
+    <string name="ville">Ville</string>
+    <string name="pays">Pays</string>
+
+    <!--popup destinataire-->
+    <string name="popupDestinataire">Veuillez selectionner au moins un destinataire</string>
+    <string name="ok">Ok</string>
+
+    <string name="popupSupprimerDestinataire">Etes vous sure de vouloir supprimer ce(s) destinataire(s)?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
 </resources>

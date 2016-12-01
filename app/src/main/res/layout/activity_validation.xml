@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.simon.dycard.ActivityValidation">
+    tools:context="com.example.simon.dycard.Validation">
 
     <SeekBar
         android:layout_width="match_parent"
@@ -31,20 +31,6 @@
         android:fontFamily="monospace"
         android:textColor="@android:color/black" />
 
-    <TextView
-        android:text="Parametres "
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="78dp"
-        android:id="@+id/Parametres"
-        android:fontFamily="monospace"
-        android:textStyle="normal|bold"
-        android:textSize="18sp"
-        android:textColor="@android:color/black"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentStart="true" />
-
     <Button
         android:text="Valider"
         android:layout_width="wrap_content"
@@ -56,88 +42,6 @@
         android:layout_alignBottom="@+id/modifier"
         android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:text="Prenom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Nom"
-        android:layout_alignStart="@+id/Nom"
-        android:layout_marginTop="26dp"
-        android:id="@+id/Prenom"
-        android:fontFamily="monospace"
-        android:textSize="18sp"
-        android:textColor="@android:color/black"
-        android:textStyle="normal|bold"
-        android:textAlignment="center" />
-
-    <TextView
-        android:text="Nom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Nom"
-        android:fontFamily="monospace"
-        android:textSize="18sp"
-        android:textColor="@android:color/black"
-        android:textAlignment="center"
-        android:textStyle="normal|bold"
-        android:layout_marginTop="24dp"
-        android:layout_below="@+id/Destinataire"
-        android:layout_alignStart="@+id/Format" />
-
-    <TextView
-        android:text="Format"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        android:id="@+id/Format"
-        android:textSize="18sp"
-        android:fontFamily="monospace"
-        android:textColor="@android:color/black"
-        android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:layout_below="@+id/Parametres"
-        android:layout_alignStart="@+id/Parametres" />
-
-    <TextView
-        android:text="Destinataire"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Destinataire"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textStyle="normal|bold"
-        android:layout_marginTop="42dp"
-        android:layout_below="@+id/Format"
-        android:layout_alignStart="@+id/Nom" />
-
-    <TextView
-        android:text="adresse"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Prenom"
-        android:layout_alignStart="@+id/Prenom"
-        android:layout_marginTop="24dp"
-        android:id="@+id/Adresse"
-        android:fontFamily="monospace"
-        android:textSize="18sp"
-        android:textColor="@android:color/black"
-        android:textStyle="normal|bold" />
-
-    <TextView
-        android:text="CP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
-        android:id="@+id/CP"
-        android:layout_below="@+id/Adresse"
-        android:layout_alignStart="@+id/Adresse"
-        android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:fontFamily="monospace"
-        android:textSize="18sp" />
-
     <Button
         android:text="Modifier"
         android:layout_width="wrap_content"
@@ -148,4 +52,58 @@
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/Prenom"
         android:layout_marginBottom="90dp" />
+
+    <TextView
+        android:text="Parametres "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Parametres"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="72dp"
+        android:layout_above="@+id/Destinataire" />
+
+    <TextView
+        android:text="Destinataire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Destinataire"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/modifier"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="90dp" />
+
+    <TextView
+        android:text="Face_avant_carte_postale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="66dp"
+        android:id="@+id/textView5"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="Face_arriere_carte_postale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="18sp"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="68dp"
+        android:layout_above="@+id/Parametres"
+        android:layout_alignStart="@+id/textView5" />
 </RelativeLayout>

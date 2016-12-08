@@ -75,7 +75,8 @@
         android:layout_alignBaseline="@+id/Précédent"
         android:layout_alignBottom="@+id/Précédent"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="69dp" />
+        android:layout_marginEnd="69dp"
+        android:onClick="texteSuivant"/>
 
     <TextView
         android:text="Prix"

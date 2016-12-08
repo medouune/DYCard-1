@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.simon.dycard.Activity_mail">
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/seekBar3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:id="@+id/OK"
+        android:layout_alignBaseline="@+id/Mail"
+        android:layout_alignBottom="@+id/Mail"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="143dp"
+        android:id="@+id/Mail"
+        android:text="Email"
+        android:layout_below="@+id/Recuperationmotdepasse"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Récupération du mot de passe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Recuperationmotdepasse"
+        android:layout_marginTop="57dp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        tools:textSize="24sp"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:layout_below="@+id/seekBar3"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

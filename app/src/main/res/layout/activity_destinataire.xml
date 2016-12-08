@@ -64,7 +64,7 @@
         android:layout_marginBottom="101dp"
         android:onClick="ajouterUnNouveauDestinataire"/>
 
-    <SeekBar
+    <!--<SeekBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -80,6 +80,15 @@
         android:layout_alignStart="@+id/button3"
         android:layout_marginStart="65dp"
         android:layout_marginTop="34dp"
-        android:id="@+id/progressBar" />
+        android:id="@+id/progressBar" />-->
+
+
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="70"
+        android:max="100"
+        android:secondaryProgress="80"/>
 
 </RelativeLayout>

@@ -63,7 +63,7 @@ public class ConnexionActivity extends AppCompatActivity {
                                 }
                                 else
                                 {
-                                    Intent intent = new Intent(ConnexionActivity.this, FirstActivity.class);
+                                    Intent intent = new Intent(ConnexionActivity.this, Etape1_Activity.class);
                                     startActivity(intent);
                                     Toast.makeText(ConnexionActivity.this, getString(R.string.connectionReussie), Toast.LENGTH_SHORT).show();
                                 }

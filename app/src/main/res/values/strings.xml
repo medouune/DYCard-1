@@ -25,6 +25,10 @@
     <string name="erreurLogin">Erreur de connexion</string>
     <string name="connectionReussie">Connection Réussie !</string>
     <string name="erreur">Erreur</string>
+    <string name="mdpOublie">Mot de passe oublié</string>
+
+    <!--Recup mdp Activity-->
+    <string name="recupMdp">Récupération du mot de passe</string>
 
     <!--Etape1 Activity-->
     <string name="etape1_bienvenue">Bienvenue</string>

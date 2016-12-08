@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_mail"
     android:layout_width="match_parent"
@@ -8,49 +8,34 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.simon.dycard.Activity_mail">
+    android:orientation="vertical"
+    tools:context="com.example.simon.dycard.activity_mail">
 
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        android:id="@+id/seekBar3"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
 
-    <Button
-        android:text="OK"
+    <TextView
+        android:text="@string/recupMdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="22dp"
-        android:id="@+id/OK"
-        android:layout_alignBaseline="@+id/Mail"
-        android:layout_alignBottom="@+id/Mail"
-        android:layout_alignParentEnd="true" />
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
 
     <EditText
+        android:text="Email"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="143dp"
         android:id="@+id/Mail"
-        android:text="Email"
-        android:layout_below="@+id/Recuperationmotdepasse"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/Recuperationmotdepasse"/>
 
-    <TextView
-        android:text="Récupération du mot de passe"
-        android:layout_width="match_parent"
+    <Button
+        android:text="@string/OK"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Recuperationmotdepasse"
-        android:layout_marginTop="57dp"
-        android:textAlignment="center"
-        android:textStyle="normal|bold"
-        tools:textSize="24sp"
-        android:textColor="@android:color/background_dark"
-        android:textSize="24sp"
-        android:layout_below="@+id/seekBar3"
-        android:layout_alignParentStart="true" />
-</RelativeLayout>
+        android:id="@+id/OK"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

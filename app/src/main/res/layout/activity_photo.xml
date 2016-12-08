@@ -11,29 +11,59 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.simon.dycard.PhotoActivity">
 
-    <SeekBar
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="match_parent"
+    <ProgressBar
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:max="5"
-        android:progress="2"
-        android:id="@+id/seekBarPhoto" />
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="70"
+        android:max="100"
+        android:secondaryProgress="80"/>
+
+    <TextView
+        android:text="@string/choisir_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" 
-        android:text="Import Photo"
-        android:onClick="importPhoto"/>
+        android:text="Importer une image"
+        android:onClick="importPhoto"
+        android:layout_marginTop="20dp"/>
     
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/photo"/>
 
+
+    <TextView
+        android:text="Choisis le format de ta carte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        android:layout_marginTop="20dp"/>
+
+
+    <Spinner
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
     <Button
         android:text="@string/buttonSuivant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="photoSuivant"/>
-    
+        android:onClick="photoSuivant"
+        android:layout_gravity="right"
+        />
+
 </LinearLayout>

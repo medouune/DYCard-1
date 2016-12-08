@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_texte"
@@ -9,22 +9,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.example.simon.dycard.activity_texte">
 
-    <TextView
-        android:text="Etape 3: Ecris ton texte"
+    <ProgressBar
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:fontFamily="monospace"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
-        android:textStyle="normal|bold"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="70"
+        android:max="100"
+        android:secondaryProgress="80"/>
+
+    <TextView
+        android:text="@string/ecris_ton_texte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp" />
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
 
     <TextView
         android:text="Tapez votre texte ici"
@@ -34,49 +36,69 @@
         android:fontFamily="monospace"
         android:lineSpacingExtra="10sp"
         android:background="@android:drawable/spinner_background"
-        android:layout_width="400dp"
+        android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignEnd="@+id/Zoomer1"
-        android:layout_marginTop="22dp" />
+        android:layout_marginTop="20dp" />
 
-    <SeekBar
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:id="@+id/seekBar"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        app:srcCompat="@android:drawable/btn_minus"
+        android:id="@+id/Zoomer2"
+        android:background="@android:color/background_light" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_plus"
+        android:id="@+id/Zoomer1"
+        android:background="@android:color/background_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="90dp">
 
     <Button
         android:layout_height="wrap_content"
-        android:layout_marginLeft="62dp"
-        android:layout_marginStart="21dp"
         android:id="@+id/Précédent"
-        android:layout_marginBottom="21dp"
         android:text="Precedent"
         android:background="@android:color/holo_blue_dark"
         android:fontFamily="sans-serif-medium"
         android:textSize="14sp"
         android:textColor="@android:color/background_light"
-        android:layout_width="wrap_content"
-        android:layout_above="@+id/Prix"
-        android:layout_alignStart="@+id/seekBar" />
+        android:layout_width="wrap_content" />
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
 
     <Button
         android:text="Suivant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Suivant"
-        android:layout_marginRight="55dp"
         android:background="@android:color/holo_blue_dark"
         android:textSize="14sp"
         android:textColor="@android:color/background_light"
-        android:layout_alignBaseline="@+id/Précédent"
-        android:layout_alignBottom="@+id/Précédent"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="69dp"
         android:onClick="texteSuivant"/>
+
+</LinearLayout>
 
     <TextView
         android:text="Prix"
@@ -88,28 +110,7 @@
         android:textSize="14sp"
         android:fontFamily="sans-serif-condensed"
         android:background="@android:color/holo_blue_dark"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginTop="20dp"
+        android:layout_gravity="end"/>
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/btn_plus"
-        android:id="@+id/Zoomer1"
-        android:layout_alignTop="@+id/Zoomer2"
-        android:layout_alignParentEnd="true"
-        android:background="@android:color/background_light" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/btn_minus"
-        android:id="@+id/Zoomer2"
-        android:layout_marginEnd="13dp"
-        android:layout_below="@+id/Tapez_votre_texte_ici"
-        android:layout_toStartOf="@+id/Prix"
-        android:layout_marginTop="23dp"
-        android:background="@android:color/background_light" />
-
-
-</RelativeLayout>
+</LinearLayout>

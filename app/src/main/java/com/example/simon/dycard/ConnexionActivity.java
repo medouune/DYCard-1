@@ -104,6 +104,11 @@ public class ConnexionActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
+    public void mdp_oublie(View v) {
+        Intent intent = new Intent(ConnexionActivity.this, activity_mail.class);
+        startActivity(intent);
+    }
+
     public void suivant(View v) {
         Intent intent = new Intent(ConnexionActivity.this, Etape1_Activity.class);
         startActivity(intent);

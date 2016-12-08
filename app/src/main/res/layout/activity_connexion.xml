@@ -14,6 +14,7 @@
     android:baselineAligned="false">
 
     <EditText
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
@@ -22,6 +23,7 @@
         android:hint="@string/pseudo" />
 
     <EditText
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -30,6 +32,7 @@
         android:hint="@string/mdp" />
 
     <Button
+        android:layout_marginTop="80dp"
         android:text="@string/connexion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +41,13 @@
         style="@style/button" />
 
     <Button
-        android:text="Suivant"
+        android:text="@string/mdp_oublie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="mail"/>
+
+    <Button
+        android:text="suivant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="suivant"/>

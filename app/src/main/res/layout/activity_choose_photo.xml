@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:text="Choisi ta photo :"
+        android:fontFamily="monospace"
+        tools:textSize="30sp"
+        android:gravity="center_horizontal|center" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selectionner l'image à importer"
+        android:onClick="importPhoto (PhotoActivity)"
+        android:id="@+id/button10" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo"
+        android:cropToPadding="false" />
+
+    <TextView
+        android:text="Attention : L'image ne doit pas excéder ..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:gravity="center_horizontal" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:text="Précédent"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button6"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_weight="0.50" />
+
+        <Button
+            android:text="Suivant"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button8"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_weight="0.50" />
+    </LinearLayout>
+</LinearLayout>

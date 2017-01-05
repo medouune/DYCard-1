@@ -65,6 +65,12 @@
             android:id="@+id/button"
             android:onClick="envoyerDestinataire"/>
 
+        <Button
+            android:text="Test Suivant"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="suivantActivityDestinataire"/>
+
     </LinearLayout>
 
 

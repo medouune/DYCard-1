@@ -14,6 +14,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.simon.dycard.model.User;
 import com.example.simon.dycard.util.MySingleton;
 import com.example.simon.dycard.R;
 
@@ -65,6 +66,7 @@ public class ConnexionActivity extends AppCompatActivity {
                                 }
                                 else
                                 {
+                                    // TODO: 05/01/2017 rajouter la création de l'objet utilisateur lors de sa connexion avec l'id envoyé par le serveur
                                     Intent intent = new Intent(ConnexionActivity.this, Etape1_Activity.class);
                                     startActivity(intent);
                                     Toast.makeText(ConnexionActivity.this, getString(R.string.connectionReussie), Toast.LENGTH_SHORT).show();
@@ -107,11 +109,15 @@ public class ConnexionActivity extends AppCompatActivity {
     }
 
     public void mdp_oublie(View v) {
+        // TODO: 05/01/2017 Gérer le cas ou l'utilisateur à oublié son mod de passe
         Intent intent = new Intent(ConnexionActivity.this, activity_mail.class);
         startActivity(intent);
     }
 
     public void suivant(View v) {
+        User user = new User();
+        user.setId(1);
+        MySingleton.getInstance(ConnexionActivity.this).setUser(user);
         Intent intent = new Intent(ConnexionActivity.this, Etape1_Activity.class);
         startActivity(intent);
     }

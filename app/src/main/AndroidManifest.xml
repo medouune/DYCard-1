@@ -19,8 +19,14 @@
         </activity>
         <activity android:name=".ConnexionActivity" />
         <activity android:name=".InscriptionActivity" />
-        <activity android:name=".FirstActivity" />
-        <activity android:name=".activity_destinataire"></activity>
+        <activity android:name=".activity_destinataire" />
+        <activity android:name=".activity_mail" />
+        <activity android:name=".activity_validation"/>
+        <activity android:name=".Etape1_Activity"/>
+        <activity android:name=".Images_Activity"/>
+        <activity android:name=".activity_ajoutdestinataire"/>
+        <activity android:name=".activity_texte"/>
+        <activity android:name=".PhotoActivity"/>
     </application>
 
 </manifest>

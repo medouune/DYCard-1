@@ -60,4 +60,9 @@ public class PhotoActivity extends AppCompatActivity {
     public void importPhoto(View v) {
         showFileChooser();
     }
+
+    public void photoSuivant(View v) {
+        Intent intent = new Intent(PhotoActivity.this, activity_texte.class);
+        startActivity(intent);
+    }
 }

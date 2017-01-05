@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
@@ -9,58 +9,67 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.example.simon.dycard.activity_destinataire">
 
-    <Button
-        android:text="@string/envoyer_ma_carte_ces_destinataires"
-        android:layout_width="wrap_content"
+    <ProgressBar
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:layout_marginBottom="30dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_toEndOf="@+id/button2" />
-
-    <Button
-        android:text="@string/supprimer_ces_destinataires_de_mes_historiques"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button5"
-        android:layout_alignBottom="@+id/button"
-        android:layout_marginBottom="49dp"
-        android:layout_alignStart="@+id/button" />
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="70"
+        android:max="100"
+        android:secondaryProgress="80"/>
 
     <TextView
         android:text="@string/selectionne_les_destinataires"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
         android:id="@+id/textView2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp"
-        android:layout_below="@+id/seekBar"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:text="@string/buttonPrecedent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button2"
-        android:layout_alignBottom="@+id/button"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="33dp" />
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
 
     <Button
         android:text="ajouter un nouveau destinataire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
-        android:layout_above="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="101dp" />
+        android:layout_gravity="center"
+        android:onClick="ajouterUnNouveauDestinataire"/>
 
-    <SeekBar
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="@string/buttonPrecedent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button2"
+            android:onClick="precedent"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <Button
+            android:text="@string/envoyer_ma_carte_ces_destinataires"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button"
+            android:onClick="envoyerDestinataire"/>
+
+    </LinearLayout>
+
+
+
+    <!--<SeekBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -68,4 +77,17 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true" />
 
-</RelativeLayout>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="34dp"
+        android:id="@+id/progressBar" />-->
+
+
+
+
+</LinearLayout>

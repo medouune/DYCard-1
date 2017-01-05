@@ -13,12 +13,8 @@
     tools:context="com.example.simon.dycard.ConnexionActivity"
     android:baselineAligned="false">
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.5"/>
-
     <EditText
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
@@ -27,6 +23,7 @@
         android:hint="@string/pseudo" />
 
     <EditText
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -35,6 +32,7 @@
         android:hint="@string/mdp" />
 
     <Button
+        android:layout_marginTop="80dp"
         android:text="@string/connexion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,22 +40,23 @@
         android:id="@+id/btnConnexion"
         style="@style/button" />
 
-    <Space
+    <Button
+        android:text="@string/mdp_oublie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.5"/>
+        android:onClick="mail"/>
 
     <Button
-        android:text="@string/buttonSuivant"
-        android:layout_width="wrap_content"
+        android:text="suivant"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="end"
         android:onClick="suivant"/>
 
     <TextView
         android:text="@string/cg"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:id="@+id/textView3"
+        android:layout_weight="1"
         android:gravity="bottom|center" />
 </LinearLayout>

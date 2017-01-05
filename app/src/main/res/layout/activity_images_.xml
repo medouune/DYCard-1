@@ -12,19 +12,20 @@
     tools:context="com.example.simon.dycard.Images_Activity">
 
 
-    <SeekBar
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="match_parent"
+    <ProgressBar
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:max="5"
-        android:progress="1"
-        android:id="@+id/seekBar" />
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="70"
+        android:max="100"
+        android:secondaryProgress="80"/>
 
     <TextView
-        android:text="@string/etape1"
+        android:text="@string/choisir_forme"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textSize="20dp"
         android:id="@+id/textView4" />
 
     <android.support.v7.widget.RecyclerView

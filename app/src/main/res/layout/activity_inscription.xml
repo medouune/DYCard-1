@@ -13,6 +13,7 @@
     tools:context="com.example.simon.dycard.InscriptionActivity">
 
     <EditText
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
@@ -49,6 +50,7 @@
         android:maxLines="1" />
 
     <Button
+        android:layout_marginTop="40dp"
         android:text="@string/inscription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

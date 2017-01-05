@@ -78,6 +78,8 @@ public class Choose_photo_activity extends AppCompatActivity {
                     })
                     .setIcon(android.R.drawable.ic_dialog_info)
                     .show();
+            Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
+            startActivity(intent);
         }
     }
 }

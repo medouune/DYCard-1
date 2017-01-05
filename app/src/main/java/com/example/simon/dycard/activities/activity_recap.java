@@ -28,7 +28,7 @@ public class activity_recap extends AppCompatActivity {
         user = MySingleton.getInstance(activity_recap.this).getUser();
         commande = MySingleton.getInstance(activity_recap.this).getCommande();
 
-        idUser.setText(user.getId());
+        idUser.setText(String.valueOf(user.getId()));
         photo.setImageBitmap(commande.getPhoto());
 
     }

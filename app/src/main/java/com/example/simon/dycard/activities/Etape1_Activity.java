@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.simon.dycard.R;
+import com.example.simon.dycard.model.Commande;
+import com.example.simon.dycard.util.MySingleton;
 
 public class Etape1_Activity extends AppCompatActivity {
 
@@ -16,6 +18,8 @@ public class Etape1_Activity extends AppCompatActivity {
     }
 
     public void creerCarte(View v) {
+        Commande commande = new Commande();
+        MySingleton.getInstance(Etape1_Activity.this).setCommande(commande);
         Intent intent = new Intent(Etape1_Activity.this, Images_Activity.class);
         startActivity(intent);
     }

@@ -8,7 +8,7 @@ import android.view.View;
 import com.example.simon.dycard.R;
 
 public class activity_ajoutdestinataire extends AppCompatActivity {
- // test 2 master
+ // test 3 master
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

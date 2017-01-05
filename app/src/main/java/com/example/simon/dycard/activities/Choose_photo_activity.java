@@ -61,8 +61,7 @@ public class Choose_photo_activity extends AppCompatActivity {
     }
 
     public void precedentImagesActivity(View v) {
-        Intent intent = new Intent(Choose_photo_activity.this, Images_Activity.class);
-        startActivity(intent);
+        finish();
     }
     public void suivantActivityTexte(View v) {
         if(bitmap != null) {
@@ -78,8 +77,8 @@ public class Choose_photo_activity extends AppCompatActivity {
                     })
                     .setIcon(android.R.drawable.ic_dialog_info)
                     .show();
-            Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
-            startActivity(intent);
+            /*Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
+            startActivity(intent);*/
         }
     }
 }

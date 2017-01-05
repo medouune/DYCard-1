@@ -58,7 +58,7 @@ public class activity_destinataire extends AppCompatActivity {
     }
 
     public void suivantActivityDestinataire(View v) {
-        Intent intentSuivant = new Intent(activity_destinataire.this, activity_recap.class);
+        Intent intentSuivant = new Intent(activity_destinataire.this, activity_validation.class);
         startActivity(intentSuivant);
     }
 

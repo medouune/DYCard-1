@@ -10,107 +10,86 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.simon.dycard.activities.activity_texte">
+    tools:context="com.example.simon.dycard.activities.activity_texte"
+    android:weightSum="1"
+    android:background="@color/background">
 
     <ProgressBar
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="?android:attr/progressBarStyleHorizontal"
         android:progress="70"
-        android:max="100"
-        android:secondaryProgress="80"/>
+        android:max="100"/>
 
     <TextView
         android:text="@string/ecris_ton_texte"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:textSize="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginTop="10dp"
         android:layout_gravity="center"/>
 
-    <TextView
-        android:text="Tapez votre texte ici"
-        android:id="@+id/Tapez_votre_texte_ici"
-        android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:fontFamily="monospace"
-        android:lineSpacingExtra="10sp"
-        android:background="@android:drawable/spinner_background"
+    <EditText
+        android:id="@+id/activity_texte_texte"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp" />
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:lines="10" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Space
+        <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/btn_minus"
+            android:id="@+id/Zoomer2"
+            android:background="@android:color/background_light" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/btn_minus"
-        android:id="@+id/Zoomer2"
-        android:background="@android:color/background_light" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/btn_plus"
-        android:id="@+id/Zoomer1"
-        android:background="@android:color/background_light" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/btn_plus"
+            android:id="@+id/Zoomer1"
+            android:background="@android:color/background_light" />
 
     </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="90dp">
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_height="wrap_content"
-        android:id="@+id/Précédent"
-        android:text="Précédent"
-        android:background="@android:color/holo_blue_dark"
-        android:fontFamily="sans-serif-medium"
-        android:textSize="14sp"
-        android:textColor="@android:color/background_light"
-        android:layout_width="wrap_content"
-        android:onClick="textePrecedent"/>
-
+        <Button
+            android:text="Précédent"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="textePrecedent"
+            />
 
         <Space
-            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:layout_width="181dp" />
 
-    <Button
-        android:text="Suivant"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Suivant"
-        android:background="@android:color/holo_blue_dark"
-        android:textSize="14sp"
-        android:textColor="@android:color/background_light"
-        android:onClick="texteSuivant"/>
+        <Button
+            android:text="Suivant"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="texteSuivant"
+            style="@style/boutonSuivant"/>
 
-</LinearLayout>
-
-    <TextView
-        android:text="Prix"
-        android:layout_width="100dp"
-        android:id="@+id/Prix"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_light"
-        android:textSize="14sp"
-        android:fontFamily="sans-serif-condensed"
-        android:background="@android:color/holo_blue_dark"
-        android:layout_gravity="end"/>
+    </LinearLayout>
 
 </LinearLayout>

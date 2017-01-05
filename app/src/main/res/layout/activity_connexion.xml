@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/background"
+    android:background="@android:color/background_light"
     tools:context="com.example.simon.dycard.activities.ConnexionActivity"
     android:baselineAligned="false">
 
@@ -19,46 +19,57 @@
     android:layout_weight="1"/>
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:ems="10"
+        android:layout_gravity="center"
         android:id="@+id/etConPseudo"
         android:hint="@string/pseudo" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:ems="10"
+        android:layout_gravity="center"
         android:id="@+id/etConPassword"
-        android:hint="@string/mdp" />
+        android:hint="@string/mdp"
+        android:paddingBottom="20dp"/>
 
     <Button
         android:text="@string/connexion"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
         android:onClick="login"
-        android:id="@+id/btnConnexion"
-        style="@style/button" />
+        style="@style/bouton" />
 
-    <Button
+    <TextView
         android:text="@string/mdp_oublie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="mail"/>
+        android:textStyle="italic"
+        android:paddingTop="10dp"
+        android:onClick="mail"
+        android:gravity="center"/>
+
+    <android.support.v4.widget.Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
     <Button
         android:text="suivant"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="suivant"/>
+        android:onClick="suivant"
+        android:layout_gravity="bottom"
+        style="@style/boutonSuivant"/>
 
     <TextView
         android:text="@string/cg"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:id="@+id/textView3"
-        android:layout_weight="1"
         android:gravity="bottom|center" />
 </LinearLayout>

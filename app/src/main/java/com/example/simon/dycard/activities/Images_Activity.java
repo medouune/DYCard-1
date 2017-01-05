@@ -18,8 +18,7 @@ public class Images_Activity extends AppCompatActivity {
 
 
     public void imagePrecedent(View v) {
-        Intent intent = new Intent(Images_Activity.this, Etape1_Activity.class);
-        startActivity(intent);
+        finish();
     }
 
     public void imageSuivant(View v) {

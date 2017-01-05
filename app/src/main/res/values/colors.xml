@@ -3,5 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="background">#ffffff</color>
+    <color name="background">#FFFFFF</color>
+
+    <!--Boutons suivant-->
+    <color name="boutonSuivantEnabled">#10bc13</color>
+    <color name="boutonSuivantPressed">#16ff1a</color>
+    <color name="boutonSuivantDisabled">#9feb9f</color>
+
+
 </resources>

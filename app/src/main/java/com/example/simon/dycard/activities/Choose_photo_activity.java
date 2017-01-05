@@ -58,6 +58,10 @@ public class Choose_photo_activity extends AppCompatActivity {
         showFileChooser();
     }
 
+    public void precedentImagesActivity(View v) {
+        Intent intent = new Intent(Choose_photo_activity.this, Images_Activity.class);
+        startActivity(intent);
+    }
     public void suivantActivityTexte(View v) {
         Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
         startActivity(intent);

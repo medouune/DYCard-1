@@ -16,8 +16,10 @@ public class Images_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_images_);
     }
 
+
     public void imagePrecedent(View v) {
-        finish();
+        Intent intent = new Intent(Images_Activity.this, Etape1_Activity.class);
+        startActivity(intent);
     }
 
     public void imageSuivant(View v) {

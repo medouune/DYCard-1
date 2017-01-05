@@ -15,29 +15,18 @@
         tools:textSize="30sp"
         android:gravity="center_horizontal|center" />
 
-
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.13" />
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Selectionner l'image à importer"
-        android:onClick="importPhoto"
-        android:id="@+id/button10" />
+        android:onClick="importPhoto"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/photo"
-        android:cropToPadding="false" />
-
-    <ExpandableListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:cropToPadding="false"
+        android:layout_weight="1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -51,7 +40,6 @@
             android:layout_alignParentRight="true"
             android:layout_gravity="right"
             android:layout_weight="0.50"
-            android:onClick="suivantActivityTexte"
             />
 
         <Button
@@ -60,6 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_gravity="right"
-            android:layout_weight="0.50" />
+            android:layout_weight="0.50"
+            android:onClick="suivantActivityTexte" />
     </LinearLayout>
 </LinearLayout>

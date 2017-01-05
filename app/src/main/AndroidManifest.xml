@@ -21,12 +21,13 @@
         <activity android:name=".activities.InscriptionActivity" />
         <activity android:name=".activities.activity_destinataire" />
         <activity android:name=".activities.activity_mail" />
-        <activity android:name=".activities.activity_validation"/>
-        <activity android:name=".activities.Etape1_Activity"/>
-        <activity android:name=".activities.Images_Activity"/>
-        <activity android:name=".activities.activity_ajoutdestinataire"/>
-        <activity android:name=".activities.activity_texte"/>
-        <activity android:name=".activities.Choose_photo_activity"/>
+        <activity android:name=".activities.activity_validation" />
+        <activity android:name=".activities.Etape1_Activity" />
+        <activity android:name=".activities.Images_Activity" />
+        <activity android:name=".activities.activity_ajoutdestinataire" />
+        <activity android:name=".activities.activity_texte" />
+        <activity android:name=".activities.Choose_photo_activity" />
+        <activity android:name=".activities.activity_recap"></activity>
     </application>
 
 </manifest>

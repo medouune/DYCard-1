@@ -81,6 +81,9 @@
     <string name="yes">Oui</string>
     <string name="no">Non</string>
 
+    <!--Alerte photo-->
+    <string name="alertePhoto">Veuillez selectionner une photo</string>
+
 
     <!--validation-->
     <string name="validation">Validation</string>

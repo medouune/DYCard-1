@@ -1,4 +1,4 @@
-package com.example.simon.dycard;
+package com.example.simon.dycard.util;
 
 import android.content.Context;
 

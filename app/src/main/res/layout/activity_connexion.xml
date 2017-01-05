@@ -10,11 +10,10 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/background"
-    tools:context="com.example.simon.dycard.ConnexionActivity"
+    tools:context="com.example.simon.dycard.activities.ConnexionActivity"
     android:baselineAligned="false">
 
     <EditText
-        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
@@ -23,7 +22,6 @@
         android:hint="@string/pseudo" />
 
     <EditText
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
@@ -32,7 +30,6 @@
         android:hint="@string/mdp" />
 
     <Button
-        android:layout_marginTop="80dp"
         android:text="@string/connexion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

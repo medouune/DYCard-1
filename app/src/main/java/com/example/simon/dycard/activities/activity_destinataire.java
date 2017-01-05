@@ -1,13 +1,13 @@
-package com.example.simon.dycard;
+package com.example.simon.dycard.activities;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.simon.dycard.R;
 
 public class activity_destinataire extends AppCompatActivity {
 

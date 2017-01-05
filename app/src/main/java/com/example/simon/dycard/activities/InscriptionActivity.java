@@ -1,4 +1,4 @@
-package com.example.simon.dycard;
+package com.example.simon.dycard.activities;
 
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
@@ -12,6 +12,8 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.simon.dycard.util.MySingleton;
+import com.example.simon.dycard.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;

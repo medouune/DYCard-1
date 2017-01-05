@@ -10,23 +10,23 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ConnexionActivity" />
-        <activity android:name=".InscriptionActivity" />
-        <activity android:name=".activity_destinataire" />
-        <activity android:name=".activity_mail" />
-        <activity android:name=".activity_validation"/>
-        <activity android:name=".Etape1_Activity"/>
-        <activity android:name=".Images_Activity"/>
-        <activity android:name=".activity_ajoutdestinataire"/>
-        <activity android:name=".activity_texte"/>
-        <activity android:name=".PhotoActivity"/>
+        <activity android:name=".activities.ConnexionActivity" />
+        <activity android:name=".activities.InscriptionActivity" />
+        <activity android:name=".activities.activity_destinataire" />
+        <activity android:name=".activities.activity_mail" />
+        <activity android:name=".activities.activity_validation"/>
+        <activity android:name=".activities.Etape1_Activity"/>
+        <activity android:name=".activities.Images_Activity"/>
+        <activity android:name=".activities.activity_ajoutdestinataire"/>
+        <activity android:name=".activities.activity_texte"/>
+        <activity android:name=".activities.Choose_photo_activity"/>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.example.simon.dycard;
+package com.example.simon.dycard.activities;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -10,11 +10,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 
+import com.example.simon.dycard.R;
+
 import java.io.IOException;
 
-public class PhotoActivity extends AppCompatActivity {
-
-    private SeekBar seekBar;
+public class Choose_photo_activity extends AppCompatActivity {
 
     private ImageView imageView;
 
@@ -24,10 +24,7 @@ public class PhotoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_photo);
-
-        seekBar = (SeekBar)findViewById(R.id.seekBarPhoto);
-        seekBar.setEnabled(false);
+        setContentView(R.layout.activity_choose_photo);
 
         imageView = (ImageView)findViewById(R.id.photo);
 
@@ -61,8 +58,8 @@ public class PhotoActivity extends AppCompatActivity {
         showFileChooser();
     }
 
-    public void photoSuivant(View v) {
-        Intent intent = new Intent(PhotoActivity.this, activity_texte.class);
+    public void suivantActivityTexte(View v) {
+        Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
         startActivity(intent);
     }
 }

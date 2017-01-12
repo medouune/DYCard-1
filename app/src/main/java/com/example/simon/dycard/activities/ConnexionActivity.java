@@ -109,13 +109,14 @@ public class ConnexionActivity extends AppCompatActivity {
     }
 
     public void mdp_oublie(View v) {
-        // TODO: 05/01/2017 Gérer le cas ou l'utilisateur à oublié son mod de passe
+        // TODO: 05/01/2017 Gérer le cas ou l'utilisateur à oublié son mot de passe
         Intent intent = new Intent(ConnexionActivity.this, activity_mail.class);
         startActivity(intent);
     }
 
     public void suivant(View v) {
         User user = new User();
+        // TODO récupérer l'id du user
         user.setId(1);
         MySingleton.getInstance(ConnexionActivity.this).setUser(user);
         Intent intent = new Intent(ConnexionActivity.this, Etape1_Activity.class);

@@ -5,10 +5,14 @@
     <color name="colorAccent">#FF4081</color>
     <color name="background">#FFFFFF</color>
 
-    <!--Boutons suivant-->
+    <!--Bouton suivant-->
     <color name="boutonSuivantEnabled">#10bc13</color>
     <color name="boutonSuivantPressed">#16ff1a</color>
     <color name="boutonSuivantDisabled">#9feb9f</color>
 
+    <!--Bouton précédent-->
+    <color name="boutonPrecedentEnabled">#d80000</color>
+    <color name="boutonPrecedentPressed">#eb0000</color>
+    <color name="boutonPrecedentDisabled">#ba4545</color>
 
 </resources>

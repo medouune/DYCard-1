@@ -26,4 +26,8 @@
             <item name="android:background">@drawable/bouton_suivant</item>
         </style>
 
+        <style name="boutonPrecedent" parent="@style/bouton">
+            <item name="android:background">@drawable/bouton_precedent</item>
+        </style>
+
 </resources>

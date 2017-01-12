@@ -85,7 +85,7 @@ public class InscriptionActivity extends AppCompatActivity {
                         Map<String, String> params = new HashMap<>();
                         params.put("pseudo", pseudo);
                         params.put("password", password);
-                        params.put("email", email);
+                        params.put("mail", email);
                         return params;
                     }
                 };

@@ -58,15 +58,17 @@ public class ConnexionActivity extends AppCompatActivity {
                             try{
                                 JSONArray jsonArray = new JSONArray(response);
                                 JSONObject jsonObject = jsonArray.getJSONObject(0);
-                                String code = jsonObject.getString("code");
+                                String code = jsonObject.getString("status");
 
-                                if(code.equals("login_failed")){
+                                if(code.equals("KO")){
                                     builder.setTitle(getString(R.string.erreurLogin));
-                                    displayAlert(jsonObject.getString("message"));
+                                    displayAlert(getString(R.string.erreur));
                                 }
                                 else
                                 {
-                                    // TODO: 05/01/2017 rajouter la création de l'objet utilisateur lors de sa connexion avec l'id envoyé par le serveur
+                                    int id = jsonObject.getInt("idUser");
+                                    int nbDestinataire = jsonObject.getInt("nbDestinataires");
+                                    MySingleton.getInstance(ConnexionActivity.this).setUser(new User(id, nbDestinataire));
                                     Intent intent = new Intent(ConnexionActivity.this, Etape1_Activity.class);
                                     startActivity(intent);
                                     Toast.makeText(ConnexionActivity.this, getString(R.string.connectionReussie), Toast.LENGTH_SHORT).show();

@@ -7,8 +7,22 @@ package com.example.simon.dycard.model;
 public class User {
 
     private int id;
+    private int nbDestinataire;
 
     public User() {
+    }
+
+    public User(int id, int nbDestinataire){
+        this.id = id;
+        this.nbDestinataire = nbDestinataire;
+    }
+
+    public int getNbDestinataire() {
+        return nbDestinataire;
+    }
+
+    public void setNbDestinataire(int nbDestinataire) {
+        this.nbDestinataire = nbDestinataire;
     }
 
     public int getId() {

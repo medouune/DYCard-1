@@ -24,7 +24,7 @@
     <string name="champsVides">Veuillez remplir tous les champs.</string>
     <string name="erreurLogin">Erreur de connexion</string>
     <string name="connectionReussie">Connection Réussie !</string>
-    <string name="erreur">Erreur</string>
+    <string name="erreur">Erreur vérifier votre connexion internet</string>
     <string name="mdp_oublie">Mot de passe oublie</string>
 
     <!--Recup mdp Activity-->

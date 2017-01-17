@@ -22,5 +22,6 @@ public class Etape1_Activity extends AppCompatActivity {
         MySingleton.getInstance(Etape1_Activity.this).setCommande(commande);
         Intent intent = new Intent(Etape1_Activity.this, Images_Activity.class);
         startActivity(intent);
+        finish();
     }
 }

@@ -55,10 +55,10 @@
     <string name="supprimer_ces_destinataires_de_mes_historiques">Supprimer ce(s) destinataire(s) de mes historiques</string>
 
     <!--activity photo-->
-    <string name="choisir_image">Choisi ton image</string>
+    <string name="choisir_image">Choisis ton image</string>
 
     <!--activity images-->
-    <string name="choisir_forme">Choisi ta forme</string>
+    <string name="choisir_forme">Choisis ta forme</string>
 
     <!--Texte Activity-->
     <string name="ecris_ton_texte">Ecris ton texte</string>
@@ -77,7 +77,7 @@
     <string name="popupDestinataire">Veuillez selectionner au moins un destinataire</string>
     <string name="ok">Ok</string>
 
-    <string name="popupSupprimerDestinataire">Etes vous sure de vouloir supprimer ce(s) destinataire(s)?</string>
+    <string name="popupSupprimerDestinataire">Êtes-vous sûr(e) de vouloir supprimer ce(s) destinataire(s)?</string>
     <string name="yes">Oui</string>
     <string name="no">Non</string>
 

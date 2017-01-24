@@ -3,7 +3,7 @@
     <string name="logo">Logo</string>
 
     <!--Button-->
-    <string name="buttonPrecedent">Precedent</string>
+    <string name="buttonPrecedent">Précédent</string>
     <string name="buttonSuivant">Suivant</string>
 
     <!--Main Activity-->
@@ -26,13 +26,13 @@
     <string name="champsVides">Veuillez remplir tous les champs.</string>
     <string name="erreurLogin">Erreur de connexion</string>
     <string name="connectionReussie">Connection Réussie !</string>
-    <string name="erreur">Erreur vérifier votre connexion internet</string>
+    <string name="erreur">Erreur vérifiez votre connexion internet</string>
     <string name="mdp_oublie">Mot de passe oublié</string>
     <string name="cg2">Conditions Générales</string>
     <string name="pseudo1">Pseudo</string>
     <string name="mdp1">Mot de passe</string>
     <string name="connexion1">Se connecter</string>
-    <string name="boutonSuivant">Suivant</string>
+
 
 
 
@@ -65,21 +65,25 @@
 
     <!--activity photo-->
     <string name="choisir_image">Choisis ton image</string>
+    <string name="importerImage">Sélectionner l'image à importer</string>
+    <string name="format">Choisis le format de la carte </string>
+    <string name="format1">Polaroïd</string>
+    <string name="format2">A6</string>
+    <string name="format3">A4</string>
+
+
 
     <!--activity images-->
     <string name="choisir_forme">Choisis ta forme</string>
-    <string name="boutonSuivant1">Suivant</string>
-    <string name="boutonPrecedent1">Précédent</string>
 
     <!--Texte Activity-->
     <string name="ecris_ton_texte">Ecris ton texte</string>
-    <string name="boutonSuivant2">Suivant</string>
-    <string name="boutonPrecedent2">Précédent</string>
-
+    <string name="zoomer">Zoomer</string>
+    <string name="dezoomer">Dézoomer</string>
 
 
     <!--Ajout destinataire Activity-->
-    <string name="Ajouter_destinataire">Ajouter ce destinataire</string>
+    <string name="buttonDestinataire">Ajouter ce destinataire</string>
     <string name="nom">Nom</string>
     <string name="prenom">Prenom</string>
     <string name="adresse">Adresse</string>

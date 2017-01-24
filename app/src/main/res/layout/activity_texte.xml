@@ -11,6 +11,35 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.simon.dycard.activity_texte">
 
+    <TextView
+        android:text="Etape 3: Ecris ton texte"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textStyle="normal|bold"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:text="Tapez votre texte ici"
+        android:id="@+id/Tapez votre texte ici"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:lineSpacingExtra="10sp"
+        android:background="@android:drawable/spinner_background"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/Zoomer1"
+        android:layout_marginTop="22dp" />
+
     <SeekBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,9 +52,9 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="62dp"
         android:layout_marginStart="21dp"
-        android:id="@+id/Precedent"
+        android:id="@+id/Précédent"
         android:layout_marginBottom="21dp"
-        android:text="Precedent"
+        android:text="Précédent"
         android:background="@android:color/holo_blue_dark"
         android:fontFamily="sans-serif-medium"
         android:textSize="14sp"
@@ -43,8 +72,8 @@
         android:background="@android:color/holo_blue_dark"
         android:textSize="14sp"
         android:textColor="@android:color/background_light"
-        android:layout_alignBaseline="@+id/Precedent"
-        android:layout_alignBottom="@+id/Precedent"
+        android:layout_alignBaseline="@+id/Précédent"
+        android:layout_alignBottom="@+id/Précédent"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="69dp" />
 
@@ -75,38 +104,11 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/btn_minus"
         android:id="@+id/Zoomer2"
-        android:background="@android:color/background_light"
-        android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/Prix" />
-
-    <TextView
-        android:text="Tapez votre texte ici"
-        android:id="@+id/Tapezvotretexteici"
-        android:textStyle="normal|bold"
-        android:textAlignment="center"
-        android:fontFamily="monospace"
-        android:lineSpacingExtra="10sp"
-        android:background="@android:drawable/spinner_background"
-        android:layout_width="400dp"
-        android:layout_height="200dp"
-        android:layout_above="@+id/Zoomer2"
-        android:layout_toEndOf="@+id/Precedent"
-        android:layout_marginBottom="27dp" />
-
-    <TextView
-        android:text="Etape 3: Ecris ton texte"
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:fontFamily="monospace"
-        android:textSize="18sp"
-        android:textAlignment="center"
-        android:textColor="@android:color/background_dark"
-        android:textStyle="normal|bold"
-        android:id="@+id/textView2"
-        android:layout_below="@+id/seekBar"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="38dp" />
-
+        android:layout_marginEnd="13dp"
+        android:layout_below="@+id/Tapez votre texte ici"
+        android:layout_toStartOf="@+id/Prix"
+        android:layout_marginTop="23dp"
+        android:background="@android:color/background_light" />
 
 
 </RelativeLayout>

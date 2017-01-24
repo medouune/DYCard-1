@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:text="Choisi ta photo :"
+        android:fontFamily="monospace"
+        tools:textSize="30sp"
+        android:gravity="center_horizontal|center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selectionner l'image à importer"
+        android:onClick="importPhoto"
+        android:id="@+id/button10"
+        android:background="@android:drawable/btn_default" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/photo"
+        android:cropToPadding="false"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:text="Choisissez le format de votre carte"
+        android:id="@+id/Formatcarte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:text="Format1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/format1" />
+        <RadioButton
+            android:text="Format2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/format2" />
+        <RadioButton
+            android:text="Format3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/format3" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="Précédent"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="precedentImagesActivity"
+            style="@style/boutonPrecedent"/>
+
+        <Space
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="181dp" />
+
+        <Button
+            android:text="Suivant"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:onClick="suivantActivityTexte"
+            style="@style/boutonSuivant"/>
+
+    </LinearLayout>
+
+</LinearLayout>

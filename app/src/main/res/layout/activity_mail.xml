@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+>>>>>>> origin/master
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_mail"
     android:layout_width="match_parent"
@@ -8,6 +12,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+<<<<<<< HEAD
     tools:context="com.example.simon.dycard.Activity_mail">
 
     <SeekBar
@@ -29,10 +34,28 @@
         android:layout_alignParentEnd="true" />
 
     <EditText
+=======
+    android:orientation="vertical"
+    tools:context="com.example.simon.dycard.activities.activity_mail">
+
+
+    <TextView
+        android:text="@string/recupMdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:text="Email"
+        android:layout_marginTop="20dp"
+>>>>>>> origin/master
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
+<<<<<<< HEAD
         android:layout_marginStart="23dp"
         android:layout_marginTop="143dp"
         android:id="@+id/Mail"
@@ -55,3 +78,17 @@
         android:layout_alignParentStart="true" />
 </RelativeLayout>
 
+=======
+        android:id="@+id/Mail"
+        android:layout_below="@+id/Recuperationmotdepasse"/>
+
+    <Button
+        android:text="@string/OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/OK"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
+>>>>>>> origin/master

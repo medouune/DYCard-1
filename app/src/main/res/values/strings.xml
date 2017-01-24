@@ -2,6 +2,10 @@
     <string name="app_name">DYCard</string>
     <string name="logo">Logo</string>
 
+    <!--Button-->
+    <string name="buttonPrecedent">Precedent</string>
+    <string name="buttonSuivant">Suivant</string>
+
     <!--Main Activity-->
     <string name="connexion">Se connecter</string>
     <string name="inscription">S\'inscrire</string>
@@ -20,11 +24,72 @@
     <string name="champsVides">Veuillez remplir tous les champs.</string>
     <string name="erreurLogin">Erreur de connexion</string>
     <string name="connectionReussie">Connection Réussie !</string>
-    <string name="erreur">Erreur</string>
+    <string name="erreur">Erreur vérifier votre connexion internet</string>
+    <string name="mdp_oublie">Mot de passe oublie</string>
+
+    <!--Recup mdp Activity-->
+    <string name="recupMdp">Récupération du mot de passe</string>
+    <string name="OK">OK</string>
+
+
+    <!--Etape1 Activity-->
+    <string name="etape1_bienvenue">Bienvenue</string>
+    <string name="etape1_instructions">Voici les étapes à suivre pour créer ta carte: </string>
+    <string name="etape1_instruction1">Choisir la forme de ta carte</string>
+    <string name="etape1_instruction2">Choisir la photo et le format de ta carte
+        La photo recouvrira l\'ensemble de ta carte
+    </string>
+    <string name="etape1_instruction3">Ecrire ton message au dos de ta carte</string>
+    <string name="etape1_instruction4">Indiquer le(s) destinataire(s)
+        La sauvegarde d\'un destinataire est possible
+    </string>
+    <string name="etape1_instruction5">Valider ta commande</string>
+    <string name="etape1_instruction6">Effectuer le paiement</string>
+    <string name="etape1_btn_creer">Créer ma carte postale</string>
+    <string name="etape1_enveloppe">*Votre carte sera envoyée dans une enveloppe</string>
+
+    <!--Destinataire Activity-->
     <string name="enregistrer_un_destinataire">Enregistrer un destinataire</string>
-    <string name="envoyer_ma_carte_ce_s_destinataire_s">Envoyer ma carte à ce(s) destinataire(s)</string>
-    <string name="pr_c_dent">Précédent</string>
-    <string name="selectionne_le_s_destinataire_s">Selectionne le(s) destinataire(s)</string>
-    <string name="supprimer_ce_s_destinataire_s_de_mes_historiques">Supprimer ce(s) destinataire(s) de mes historiques</string>
+    <string name="envoyer_ma_carte_ces_destinataires">Envoyer ma carte</string>
+    <string name="selectionne_les_destinataires">Selectionne le(s) destinataire(s)</string>
+    <string name="supprimer_ces_destinataires_de_mes_historiques">Supprimer ce(s) destinataire(s) de mes historiques</string>
+
+    <!--activity photo-->
+    <string name="choisir_image">Choisi ton image</string>
+
+    <!--activity images-->
+    <string name="choisir_forme">Choisi ta forme</string>
+
+    <!--Texte Activity-->
+    <string name="ecris_ton_texte">Ecris ton texte</string>
+
+    <!--Ajout destinataire Activity-->
+    <string name="nom">Nom</string>
+    <string name="prenom">Prenom</string>
+    <string name="adresse">Adresse</string>
+    <string name="codepostal">Code Postal</string>
+    <string name="ville">Ville</string>
+    <string name="pays">Pays</string>
+    <string name="ajout_destinataire">Ajouter un destinataire</string>
+
+
+    <!--popup destinataire-->
+    <string name="popupDestinataire">Veuillez selectionner au moins un destinataire</string>
+    <string name="ok">Ok</string>
+
+    <string name="popupSupprimerDestinataire">Etes vous sure de vouloir supprimer ce(s) destinataire(s)?</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+
+    <!--Alerte photo-->
+    <string name="alertePhoto">Veuillez selectionner une photo</string>
+
+
+    <!--validation-->
+    <string name="validation">Validation</string>
+    <string name="face_avant">Face avant de la carte postale</string>
+    <string name="face_arriere">Face arrière de la carte postale</string>
+    <string name="parametres">Paramètres</string>
+    <string name="destinataire">Destinataire(s)</string>
 
 </resources>

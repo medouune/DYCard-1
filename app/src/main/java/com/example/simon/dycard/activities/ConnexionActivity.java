@@ -1,4 +1,4 @@
-package com.example.simon.dycard;
+package com.example.simon.dycard.activities;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,6 +14,9 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.simon.dycard.model.User;
+import com.example.simon.dycard.util.MySingleton;
+import com.example.simon.dycard.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -55,15 +58,18 @@ public class ConnexionActivity extends AppCompatActivity {
                             try{
                                 JSONArray jsonArray = new JSONArray(response);
                                 JSONObject jsonObject = jsonArray.getJSONObject(0);
-                                String code = jsonObject.getString("code");
+                                String code = jsonObject.getString("status");
 
-                                if(code.equals("login_failed")){
+                                if(code.equals("KO")){
                                     builder.setTitle(getString(R.string.erreurLogin));
-                                    displayAlert(jsonObject.getString("message"));
+                                    displayAlert(getString(R.string.erreur));
                                 }
                                 else
                                 {
-                                    Intent intent = new Intent(ConnexionActivity.this, FirstActivity.class);
+                                    int id = jsonObject.getInt("idUser");
+                                    int nbDestinataire = jsonObject.getInt("nbDestinataires");
+                                    MySingleton.getInstance(ConnexionActivity.this).setUser(new User(id, nbDestinataire));
+                                    Intent intent = new Intent(ConnexionActivity.this, Etape1_Activity.class);
                                     startActivity(intent);
                                     Toast.makeText(ConnexionActivity.this, getString(R.string.connectionReussie), Toast.LENGTH_SHORT).show();
                                 }
@@ -102,5 +108,20 @@ public class ConnexionActivity extends AppCompatActivity {
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
+    }
+
+    public void mdp_oublie(View v) {
+        // TODO: 05/01/2017 Gérer le cas ou l'utilisateur à oublié son mot de passe
+        Intent intent = new Intent(ConnexionActivity.this, activity_mail.class);
+        startActivity(intent);
+    }
+
+    public void suivant(View v) {
+        User user = new User();
+        // TODO récupérer l'id du user
+        user.setId(1);
+        MySingleton.getInstance(ConnexionActivity.this).setUser(user);
+        Intent intent = new Intent(ConnexionActivity.this, Etape1_Activity.class);
+        startActivity(intent);
     }
 }

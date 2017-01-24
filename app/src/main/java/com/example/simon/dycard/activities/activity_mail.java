@@ -1,13 +1,15 @@
-package com.example.simon.dycard;
+package com.example.simon.dycard.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class activity_destinataire extends AppCompatActivity {
+import com.example.simon.dycard.R;
+
+public class activity_mail extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_destinataire);
+        setContentView(R.layout.activity_mail);
     }
 }

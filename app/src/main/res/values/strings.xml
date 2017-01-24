@@ -18,9 +18,11 @@
     <string name="mdpConfirm">Confirmer le mot de passe</string>
     <string name="email">Email</string>
     <string name="mdpDifferents">Les mots de passe sont différents.</string>
+    <string name="buttoninscription">S'inscrire </string>
+    <string name="cg1">Conditions Générales</string>
 
     <!--Connexion Activity-->
-    <string name="erreurFormulaire">Une erreur c\'est produite.</string>
+    <string name="erreurFormulaire">Une erreur s\'est produite.</string>
     <string name="champsVides">Veuillez remplir tous les champs.</string>
     <string name="erreurLogin">Erreur de connexion</string>
     <string name="connectionReussie">Connection Réussie !</string>
@@ -74,7 +76,7 @@
 
 
     <!--popup destinataire-->
-    <string name="popupDestinataire">Veuillez selectionner au moins un destinataire</string>
+    <string name="popupDestinataire">Veuillez sélectionner au moins un destinataire</string>
     <string name="ok">Ok</string>
 
     <string name="popupSupprimerDestinataire">Êtes-vous sûr(e) de vouloir supprimer ce(s) destinataire(s)?</string>

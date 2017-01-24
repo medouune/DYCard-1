@@ -18,8 +18,7 @@
     <string name="mdpConfirm">Confirmer le mot de passe</string>
     <string name="email">Email</string>
     <string name="mdpDifferents">Les mots de passe sont différents.</string>
-    <string name="buttoninscription">S'inscrire </string>
-    <string name="cg1">Conditions Générales</string>
+
 
     <!--Connexion Activity-->
     <string name="erreurFormulaire">Une erreur s\'est produite.</string>
@@ -28,12 +27,6 @@
     <string name="connectionReussie">Connection Réussie !</string>
     <string name="erreur">Erreur vérifiez votre connexion internet</string>
     <string name="mdp_oublie">Mot de passe oublié</string>
-    <string name="cg2">Conditions Générales</string>
-    <string name="pseudo1">Pseudo</string>
-    <string name="mdp1">Mot de passe</string>
-    <string name="connexion1">Se connecter</string>
-
-
 
 
     <!--Recup mdp Activity-->
@@ -65,7 +58,7 @@
 
     <!--activity photo-->
     <string name="choisir_image">Choisis ton image</string>
-    <string name="importerImage">Sélectionner l'image à importer</string>
+    <string name="importerImage">Sélectionner l\'image à importer</string>
     <string name="format">Choisis le format de la carte </string>
     <string name="format1">Polaroïd</string>
     <string name="format2">A6</string>

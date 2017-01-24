@@ -37,7 +37,7 @@
         android:layout_weight="1"/>
 
     <TextView
-        android:text="Choisissez le format de votre carte"
+        android:text="@string/format"
         android:id="@+id/Formatcarte"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,17 +49,17 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:text="Format1"
+            android:text="@string/format1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/format1" />
         <RadioButton
-            android:text="Format2"
+            android:text="@string/format2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/format2" />
         <RadioButton
-            android:text="Format3"
+            android:text="@string/format3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/format3" />

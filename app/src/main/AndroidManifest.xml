@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.simon.dycard">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-sdk android:minSdkVersion="INSERT_YOUR_DESIRED_minSdkVersion_HERE" tools:overrideLibrary="com.paypal.android.sdk.payments"/>
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo_dycard"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/DYCard">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ConnexionActivity" />
-        <activity android:name=".InscriptionActivity" />
-        <activity android:name=".FirstActivity" />
-        <activity android:name=".activity_destinataire" />
-        <activity android:name=".activity_texte"></activity>
+        <activity android:name=".activities.ConnexionActivity" />
+        <activity android:name=".activities.InscriptionActivity" />
+        <activity android:name=".activities.activity_destinataire" />
+        <activity android:name=".activities.activity_mail" />
+        <activity android:name=".activities.activity_validation" />
+        <activity android:name=".activities.Etape1_Activity" />
+        <activity android:name=".activities.Images_Activity" />
+        <activity android:name=".activities.activity_ajoutdestinataire" />
+        <activity android:name=".activities.activity_texte" />
+        <activity android:name=".activities.Choose_photo_activity" />
     </application>
 
 </manifest>

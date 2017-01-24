@@ -42,7 +42,8 @@
         android:layout_gravity="center"
         android:width="200dp"
         android:onClick="login"
-        style="@style/bouton" />
+        style="@style/bouton"
+        android:fontFamily="sans-serif" />
 
     <TextView
         android:text="@string/mdp_oublie"

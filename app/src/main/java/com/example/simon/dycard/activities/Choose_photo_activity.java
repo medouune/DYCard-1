@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 
 import com.example.simon.dycard.R;
 import com.example.simon.dycard.util.MySingleton;
@@ -19,7 +20,6 @@ import java.io.IOException;
 public class Choose_photo_activity extends AppCompatActivity {
 
     private ImageView imageView;
-
     private Bitmap bitmap;
 
     private int PICK_IMAGE_REQUEST = 1;
@@ -29,8 +29,6 @@ public class Choose_photo_activity extends AppCompatActivity {
         setContentView(R.layout.activity_choose_photo);
 
         imageView = (ImageView)findViewById(R.id.photo);
-
-
     }
 
     private void showFileChooser() {
@@ -54,6 +52,10 @@ public class Choose_photo_activity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    public void choixFormat(View v) {
+
     }
 
     public void importPhoto(View v) {

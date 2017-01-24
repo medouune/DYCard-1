@@ -63,6 +63,7 @@ public class Choose_photo_activity extends AppCompatActivity {
     public void precedentImagesActivity(View v) {
         finish();
     }
+
     public void suivantActivityTexte(View v) {
         if(bitmap != null) {
             MySingleton.getInstance(Choose_photo_activity.this).getCommande().setPhoto(bitmap);

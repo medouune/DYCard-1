@@ -3,21 +3,21 @@
     <string name="logo">Logo</string>
 
     <!--Button-->
-    <string name="buttonPrecedent">Précédent</string>
-    <string name="buttonSuivant">Suivant</string>
+    <string name="buttonPrecedent">Back</string>
+    <string name="buttonSuivant">Next</string>
 
 
     <!--Main Activity-->
     <string name="connexion">Se connecter</string>
-    <string name="inscription">S\'inscrire</string>
-    <string name="connexionFacebook">Se connecter avec facebook</string>
-    <string name="cg">Conditions Générales</string>
+    <string name="inscription">Sign in</string>
+    <string name="connexionFacebook">Sign in with facebook</string>
+    <string name="cg">Term of use</string>
 
     <!--Inscription Activity-->
-    <string name="pseudo">Pseudo</string>
-    <string name="mdp">Mot de passe</string>
-    <string name="mdpConfirm">Confirmer le mot de passe</string>
-    <string name="email">Email</string>
+    <string name="pseudo">Login</string>
+    <string name="mdp">Password</string>
+    <string name="mdpConfirm">Retype password</string>
+    <string name="email">E-mail</string>
     <string name="mdpDifferents">Les mots de passe sont différents.</string>
 
 
@@ -36,7 +36,7 @@
 
 
     <!--Etape1 Activity-->
-    <string name="etape1_bienvenue">Bienvenue</string>
+    <string name="etape1_bienvenue">Welcome</string>
     <string name="etape1_instructions">Voici les étapes à suivre pour créer ta carte: </string>
     <string name="etape1_instruction1">Choisir la forme de ta carte</string>
     <string name="etape1_instruction2">Choisir la photo et le format de ta carte
@@ -85,12 +85,12 @@
 
     <!--Ajout destinataire Activity-->
     <string name="buttonDestinataire">Ajouter ce destinataire</string>
-    <string name="nom">Nom</string>
-    <string name="prenom">Prenom</string>
-    <string name="adresse">Adresse</string>
-    <string name="codepostal">Code Postal</string>
-    <string name="ville">Ville</string>
-    <string name="pays">Pays</string>
+    <string name="nom">Last name</string>
+    <string name="prenom">First name</string>
+    <string name="adresse">Address</string>
+    <string name="codepostal">Postal Code</string>
+    <string name="ville">City</string>
+    <string name="pays">Country</string>
     <string name="ajout_destinataire">Ajouter un destinataire</string>
 
 

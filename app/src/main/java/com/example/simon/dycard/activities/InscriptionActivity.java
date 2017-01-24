@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -26,7 +27,7 @@ public class InscriptionActivity extends AppCompatActivity {
 
     private EditText Pseudo, Password, Password2, Email;
     private String pseudo, password, password2, email;
-    private String login_url = "/register.php";
+    private String login_url = "http://192.168.1.34/DYCard/WebServiceDYCard/register";
     private AlertDialog.Builder builder;
 
     @Override
@@ -66,9 +67,13 @@ public class InscriptionActivity extends AppCompatActivity {
                                     JSONArray jsonArray = new JSONArray(response);
                                     JSONObject jsonObject = jsonArray.getJSONObject(0);
                                     String code = jsonObject.getString("code");
-                                    builder.setTitle("Server Response...");
-                                    builder.setMessage("aze");
-                                    displayAlert(code);
+                                    if(code.equals("OK")) {
+                                        Toast.makeText(InscriptionActivity.this, R.string.inscriptionSucces, Toast.LENGTH_SHORT).show();
+                                        finish();
+                                    }
+                                    else {
+                                        displayAlert(getResources().getString(R.string.inscriptionEchec));
+                                    }
                                 }catch (JSONException e) {
                                     e.printStackTrace();
                                 }
@@ -94,25 +99,19 @@ public class InscriptionActivity extends AppCompatActivity {
         }
     }
 
-    public void displayAlert(final String message){
+    public void displayAlert(final String message) {
+        builder.setMessage(message);
         builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                if(message.equals(getString(R.string.champsVides))){
-                    Password.setText("");
-                    Password2.setText("");
-                } else if(message.equals("register_failed")) {
-                    Pseudo.setText("");
-                    Password.setText("");
-                    Password2.setText("");
-                    Email.setText("");
-                } else if(message.equals("register_success")){
-                    finish();
-                }
+                Pseudo.setText("");
+                Password.setText("");
+                Password2.setText("");
+                Email.setText("");
             }
         });
-
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }
+
 }

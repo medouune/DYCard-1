@@ -28,6 +28,7 @@ public class activity_texte extends AppCompatActivity {
         Intent intent = new Intent(activity_texte.this, activity_destinataire.class);
         startActivity(intent);
     }
+
     public void textePrecedent(View v) {
         finish();
     }

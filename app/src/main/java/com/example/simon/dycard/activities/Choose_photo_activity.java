@@ -21,6 +21,7 @@ public class Choose_photo_activity extends AppCompatActivity {
 
     private ImageView imageView;
     private Bitmap bitmap;
+    private String choix;
 
     private int PICK_IMAGE_REQUEST = 1;
     @Override
@@ -55,7 +56,22 @@ public class Choose_photo_activity extends AppCompatActivity {
     }
 
     public void choixFormat(View v) {
+        boolean checked = ((RadioButton) v).isChecked();
 
+        switch(v.getId()) {
+            case R.id.format1:
+                if(checked)
+                    choix = "format1";
+                break;
+            case R.id.format2:
+                if(checked)
+                    choix = "format2";
+                break;
+            case R.id.format3:
+                if(checked)
+                    choix = "format3";
+                break;
+        }
     }
 
     public void importPhoto(View v) {
@@ -67,21 +83,25 @@ public class Choose_photo_activity extends AppCompatActivity {
     }
 
     public void suivantActivityTexte(View v) {
-        if(bitmap != null) {
+        if(bitmap != null && choix != null) {
+            MySingleton.getInstance(Choose_photo_activity.this).getCommande().setFormat(choix);
             MySingleton.getInstance(Choose_photo_activity.this).getCommande().setPhoto(bitmap);
             Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
             startActivity(intent);
-        } else {
-            new AlertDialog.Builder(this)
-                    .setMessage(R.string.alertePhoto)
-                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int which) {
-                        }
-                    })
-                    .setIcon(android.R.drawable.ic_dialog_info)
-                    .show();
-            /*Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
-            startActivity(intent);*/
-        }
+        } else if(bitmap == null){
+            afficherAlerte(getResources().getString(R.string.alertePhoto));
+        } else
+            afficherAlerte(getResources().getString(R.string.alerteFormat));
+    }
+
+    public void afficherAlerte(String message){
+        new AlertDialog.Builder(this)
+                .setMessage(message)
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                })
+                .setIcon(android.R.drawable.ic_dialog_info)
+                .show();
     }
 }

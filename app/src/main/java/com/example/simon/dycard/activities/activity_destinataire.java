@@ -53,8 +53,7 @@ public class activity_destinataire extends AppCompatActivity {
 
 
     public void precedent(View v) {
-        Intent intent = new Intent(activity_destinataire.this, activity_texte.class);
-        startActivity(intent);
+        finish();
     }
 
     public void suivantActivityDestinataire(View v) {

@@ -99,20 +99,9 @@
                 android:layout_alignParentRight="true"
                 android:layout_gravity="right"
                 android:layout_weight="0.50"
-                android:onClick="suivantpaypal"
+                android:onClick="payer"
                 style="@style/boutonSuivant"/>
         </LinearLayout>
-
-            <Space
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/silver_paypal"
-            android:onClick="payer"/>
 
         </LinearLayout>
 

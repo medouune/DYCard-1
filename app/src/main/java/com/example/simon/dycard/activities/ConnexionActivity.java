@@ -29,7 +29,7 @@ public class ConnexionActivity extends AppCompatActivity {
 
     private EditText Pseudo, Password;
     private String pseudo, password;
-    private String login_url = "/login.php";
+    private String login_url = "http://192.168.1.34/DYCard/WebServiceDYCard/login";
     private AlertDialog.Builder builder;
 
     @Override
@@ -67,7 +67,7 @@ public class ConnexionActivity extends AppCompatActivity {
                                 else
                                 {
                                     int id = jsonObject.getInt("idUser");
-                                    int nbDestinataire = jsonObject.getInt("nbDestinataires");
+                                    int nbDestinataire = jsonObject.getInt("nbDestinataire");
                                     MySingleton.getInstance(ConnexionActivity.this).setUser(new User(id, nbDestinataire));
                                     Intent intent = new Intent(ConnexionActivity.this, Etape1_Activity.class);
                                     startActivity(intent);

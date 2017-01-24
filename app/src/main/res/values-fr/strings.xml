@@ -20,6 +20,8 @@
 <string name="mdpConfirm">Confirmer le mot de passe</string>
 <string name="email">Email</string>
 <string name="mdpDifferents">Les mots de passe sont différents.</string>
+    <string name="inscriptionSucces">Inscription réussie</string>
+    <string name="inscriptionEchec">Le pseudo ou l\'adresse mail est déjà utilisé</string>
 
 
 <!--Connexion Activity-->
@@ -27,7 +29,7 @@
 <string name="champsVides">Veuillez remplir tous les champs.</string>
 <string name="erreurLogin">Erreur de connexion</string>
 <string name="connectionReussie">Connection Réussie !</string>
-<string name="erreur">Erreur vérifiez votre connexion internet</string>
+<string name="erreur">Mauvais Identifiants</string>
 <string name="mdp_oublie">Mot de passe oublié</string>
 
 
@@ -67,7 +69,7 @@
 <string name="format3">A4</string>
 
 <!--popup format-->
-<string name="popupFormat">Veuillez sélectionner un format</string>
+<string name="alerteFormat">Veuillez sélectionner un format</string>
 <string name="valider">OK</string>
 
 <!--Alerte photo-->

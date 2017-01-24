@@ -6,6 +6,7 @@
     <string name="buttonPrecedent">Précédent</string>
     <string name="buttonSuivant">Suivant</string>
 
+
     <!--Main Activity-->
     <string name="connexion">Se connecter</string>
     <string name="inscription">S\'inscrire</string>

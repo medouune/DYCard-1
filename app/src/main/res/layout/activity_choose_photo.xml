@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
-        android:text="@string/choisir_image"
+        android:text="@string/choisir_photo"
         android:fontFamily="monospace"
         tools:textSize="30sp"
         android:gravity="center_horizontal|center" />

@@ -58,10 +58,10 @@
     <string name="supprimer_ces_destinataires_de_mes_historiques">Supprimer ce(s) destinataire(s) de mes historiques</string>
 
     <!--activity photo-->
-    <string name="choisir_photo">Choisis ta photo</string>
+    <string name="choisir_photo">Choose your photo</string>
     <string name="importerImage">Sélectionner l\'image à importer</string>
     <string name="format">Choisis le format de la carte : </string>
-    <string name="format1">Polaroïd</string>
+    <string name="format1">Polaroid</string>
     <string name="format2">A6</string>
     <string name="format3">A4</string>
 

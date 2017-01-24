@@ -27,7 +27,14 @@
     <string name="erreurLogin">Erreur de connexion</string>
     <string name="connectionReussie">Connection Réussie !</string>
     <string name="erreur">Erreur vérifier votre connexion internet</string>
-    <string name="mdp_oublie">Mot de passe oublie</string>
+    <string name="mdp_oublie">Mot de passe oublié</string>
+    <string name="cg2">Conditions Générales</string>
+    <string name="pseudo1">Pseudo</string>
+    <string name="mdp1">Mot de passe</string>
+    <string name="connexion1">Se connecter</string>
+    <string name="boutonSuivant">Suivant</string>
+
+
 
     <!--Recup mdp Activity-->
     <string name="recupMdp">Récupération du mot de passe</string>
@@ -53,7 +60,7 @@
     <!--Destinataire Activity-->
     <string name="enregistrer_un_destinataire">Enregistrer un destinataire</string>
     <string name="envoyer_ma_carte_ces_destinataires">Envoyer ma carte</string>
-    <string name="selectionne_les_destinataires">Selectionne le(s) destinataire(s)</string>
+    <string name="selectionne_les_destinataires">Sélectionne le(s) destinataire(s)</string>
     <string name="supprimer_ces_destinataires_de_mes_historiques">Supprimer ce(s) destinataire(s) de mes historiques</string>
 
     <!--activity photo-->
@@ -61,11 +68,18 @@
 
     <!--activity images-->
     <string name="choisir_forme">Choisis ta forme</string>
+    <string name="boutonSuivant1">Suivant</string>
+    <string name="boutonPrecedent1">Précédent</string>
 
     <!--Texte Activity-->
     <string name="ecris_ton_texte">Ecris ton texte</string>
+    <string name="boutonSuivant2">Suivant</string>
+    <string name="boutonPrecedent2">Précédent</string>
+
+
 
     <!--Ajout destinataire Activity-->
+    <string name="Ajouter_destinataire">Ajouter ce destinataire</string>
     <string name="nom">Nom</string>
     <string name="prenom">Prenom</string>
     <string name="adresse">Adresse</string>
@@ -73,6 +87,7 @@
     <string name="ville">Ville</string>
     <string name="pays">Pays</string>
     <string name="ajout_destinataire">Ajouter un destinataire</string>
+
 
 
     <!--popup destinataire-->
@@ -84,7 +99,7 @@
     <string name="no">Non</string>
 
     <!--Alerte photo-->
-    <string name="alertePhoto">Veuillez selectionner une photo</string>
+    <string name="alertePhoto">Veuillez sélectionner une photo</string>
 
 
     <!--validation-->
@@ -93,5 +108,7 @@
     <string name="face_arriere">Face arrière de la carte postale</string>
     <string name="parametres">Paramètres</string>
     <string name="destinataire">Destinataire(s)</string>
+    <string name="modifier">Modifier</string>
+
 
 </resources>

@@ -80,14 +80,28 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <Button
+                android:text="Modifier"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_weight="0.50"
+                android:onClick="modifierparametres"
+                style="@style/boutonPrecedent"/>
 
-        <Button
-            android:text="Modifier"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
-            android:background="@android:color/holo_blue_dark"/>
+            <Button
+                android:text="Accéder au paiement"
+                android:layout_width="116dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_weight="0.50"
+                android:onClick="suivantpaypal"
+                style="@style/boutonSuivant"/>
+        </LinearLayout>
 
             <Space
                 android:layout_width="wrap_content"
@@ -102,5 +116,4 @@
 
         </LinearLayout>
 
-    </LinearLayout>
 </ScrollView>

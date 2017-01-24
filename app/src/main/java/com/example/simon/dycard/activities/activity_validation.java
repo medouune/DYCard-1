@@ -54,6 +54,13 @@ public class activity_validation extends AppCompatActivity {
         startService(m_service); // paypal service, listening to calls to paypal app
     }
 
+
+    public void modifierparametres(View v) {
+        Intent intent = new Intent(activity_validation.this, Images_Activity.class);
+        startActivity(intent);
+    }
+
+
     public void payer(View view)
     {
         PayPalPayment payment = new PayPalPayment(new BigDecimal(2.33), "EUR", "Test payment with Paypal",

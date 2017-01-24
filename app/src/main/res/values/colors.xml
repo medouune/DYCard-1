@@ -6,13 +6,13 @@
     <color name="background">#FFFFFF</color>
 
     <!--Bouton suivant-->
-    <color name="boutonSuivantEnabled">#10bc13</color>
-    <color name="boutonSuivantPressed">#16ff1a</color>
-    <color name="boutonSuivantDisabled">#9feb9f</color>
+    <color name="boutonSuivantEnabled">#abb2ab</color>
+    <color name="boutonSuivantPressed">#68e26a</color>
+    <color name="boutonSuivantDisabled">#dce2dc</color>
 
     <!--Bouton précédent-->
-    <color name="boutonPrecedentEnabled">#d80000</color>
-    <color name="boutonPrecedentPressed">#eb0000</color>
-    <color name="boutonPrecedentDisabled">#ba4545</color>
+    <color name="boutonPrecedentEnabled">#abb2ab</color>
+    <color name="boutonPrecedentPressed">#9cd2ed</color>
+    <color name="boutonPrecedentDisabled">#dce2dc</color>
 
 </resources>

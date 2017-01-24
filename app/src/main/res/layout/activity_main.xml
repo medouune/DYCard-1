@@ -29,7 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@android:drawable/btn_default"
-        android:onClick="connection"/>
+        android:onClick="connection"
+        style="@style/bouton"/>
 
     <Button
         android:text="@string/inscription"
@@ -37,7 +38,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@android:drawable/btn_default"
-        android:onClick="inscription"/>
+        android:onClick="inscription"
+        style="@style/bouton"/>
 
     <Button
         android:text="@string/connexionFacebook"
@@ -45,7 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="@android:drawable/btn_default"
-        android:onClick="connexionFacebook"/>
+        android:onClick="connexionFacebook"
+        style="@style/bouton"/>
 
     <TextView
         android:text="@string/cg"

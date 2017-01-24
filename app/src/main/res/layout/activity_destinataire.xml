@@ -34,7 +34,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/button3"
         android:layout_gravity="center"
-        android:onClick="ajouterUnNouveauDestinataire"/>
+        android:onClick="ajouterUnNouveauDestinataire"
+        style="@style/bouton" />
 
     <Space
         android:layout_width="match_parent"
@@ -44,32 +45,48 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:text="Le prix de ta carte est :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5" />
+    <Button
+        android:text="@string/envoyer_ma_carte_ces_destinataires"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/button"
+        android:onClick="envoyerDestinataire"
+        style="@style/bouton" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
             android:text="@string/buttonPrecedent"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_weight="0.50"
             android:id="@+id/button2"
-            android:onClick="precedent"/>
+            android:onClick="precedent"
+            style="@style/boutonPrecedent"/>
 
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
 
         <Button
-            android:text="@string/envoyer_ma_carte_ces_destinataires"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:id="@+id/button"
-            android:onClick="envoyerDestinataire"/>
-
-        <Button
-            android:text="Test Suivant"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:onClick="suivantActivityDestinataire"/>
+            android:text="Suivant"
+            android:layout_width="116dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:layout_weight="0.50"
+            android:onClick="suivantActivityDestinataire"
+            style="@style/boutonSuivant"/>
 
     </LinearLayout>
 

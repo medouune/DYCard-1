@@ -79,7 +79,8 @@
         android:layout_height="wrap_content"
         android:text="@string/etape1_btn_creer"
         android:layout_gravity="center"
-        android:onClick="creerCarte" />
+        android:onClick="creerCarte"
+        style="@style/bouton"/>
 
     <TextView
         android:layout_width="wrap_content"

@@ -78,10 +78,10 @@
 
 
     <!--Texte Activity-->
-    <string name="ecris_ton_texte">Ecris ton texte</string>
-    <string name="tapez_votre_texte">Tape ton texte ici</string>
+    <string name="ecris_ton_texte">Ecris ton texte : </string>
     <string name="zoomer">Zoomer</string>
     <string name="dezoomer">Dézoomer</string>
+
 
     <!--Ajout destinataire Activity-->
     <string name="buttonDestinataire">Ajouter ce destinataire</string>

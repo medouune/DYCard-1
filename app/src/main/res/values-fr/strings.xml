@@ -95,6 +95,10 @@
 <string name="ville">Ville</string>
 <string name="pays">Pays</string>
 <string name="ajout_destinataire">Ajouter un destinataire</string>
+    <string name="ajoutDestEchec">Un destinataire existe déjà à cette adresse</string>
+    <string name="alerteDestinataire">Veuillez remplir tous les champs</string>
+    <string name="ajoutDestSucces">Destinataire ajouté </string>
+
 
 
 

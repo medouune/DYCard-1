@@ -93,8 +93,8 @@
     <string name="codepostal">Postal Code</string>
     <string name="ville">City</string>
     <string name="pays">Country</string>
-    <string name="alerteDestinataire">Veuillez remplir tous les champs</string>
-    <string name="ajoutDestSucces">Destinataire ajouté</string>
+    <string name="alerteDestinataire">Please fill in all fields</string>
+    <string name="ajoutDestSucces">Recipient added </string>
     <string name="ajoutDestEchec">Un destinataire existe déjà à cette adresse</string>
     <string name="ajout_destinataire">Add a recipient</string>
 

@@ -95,7 +95,7 @@
     <string name="pays">Country</string>
     <string name="alerteDestinataire">Please fill in all fields</string>
     <string name="ajoutDestSucces">Recipient added </string>
-    <string name="ajoutDestEchec">Un destinataire existe déjà à cette adresse</string>
+    <string name="ajoutDestEchec">A recipient already exists for this address </string>
     <string name="ajout_destinataire">Add a recipient</string>
 
 

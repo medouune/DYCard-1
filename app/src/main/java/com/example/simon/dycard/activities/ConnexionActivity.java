@@ -29,7 +29,7 @@ public class ConnexionActivity extends AppCompatActivity {
 
     private EditText Pseudo, Password;
     private String pseudo, password;
-    private String login_url = "http://192.168.1.34/DYCard/WebServiceDYCard/login";
+    private String LOGIN_URL = "http://192.168.1.34/DYCard/WebServiceDYCard/login";
     private AlertDialog.Builder builder;
 
     @Override
@@ -51,7 +51,7 @@ public class ConnexionActivity extends AppCompatActivity {
             displayAlert(getString(R.string.champsVides));
         }
         else {
-            StringRequest stringRequest = new StringRequest(Request.Method.POST, login_url,
+            StringRequest stringRequest = new StringRequest(Request.Method.POST, LOGIN_URL,
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {

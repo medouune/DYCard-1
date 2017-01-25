@@ -21,64 +21,55 @@
 
     <TextView
         android:text="@string/ajout_destinataire"
+        android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView2"
-        android:textSize="20dp"
         android:layout_gravity="center"/>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/destinataireNom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="11dp"
         android:inputType="textPersonName"
         android:hint="@string/nom" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/destinatairePrenom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText3"
         android:inputType="textPersonName"
         android:hint="@string/prenom"/>
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/destinataireAdresse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textLongMessage"
-    android:hint="@string/adresse" />
+        android:hint="@string/adresse" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/destinataireCodePostal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
         android:hint="@string/codepostal" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/destinataireVille"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
         android:inputType="textLongMessage"
         android:hint="@string/ville" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/destinatairePays"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textLongMessage"
         android:hint="@string/pays" />
 
     <Button
-        android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="ajouterCeDestinataire"

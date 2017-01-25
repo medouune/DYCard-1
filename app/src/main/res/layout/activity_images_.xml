@@ -16,7 +16,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         style="?android:attr/progressBarStyleHorizontal"
-        android:progress="70"
+        android:progress="16"
         android:max="100"
         android:secondaryProgress="80"/>
 
@@ -25,7 +25,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:fontFamily="casual"
         android:textSize="20dp"
+        android:textStyle="bold"
         android:id="@+id/textView4" />
 
     <android.support.v7.widget.RecyclerView
@@ -42,8 +44,9 @@
 
         <Button
             android:text="@string/buttonPrecedent"
-            android:layout_width="120dp"
+            android:layout_width="116dp"
             android:layout_height="wrap_content"
+            android:layout_weight="0.50"
             android:onClick="imagePrecedent"
             style="@style/boutonPrecedent"/>
 
@@ -54,8 +57,9 @@
 
         <Button
             android:text="@string/buttonSuivant"
-            android:layout_width="120dp"
+            android:layout_width="116dp"
             android:layout_height="wrap_content"
+            android:layout_weight="0.50"
             android:onClick="imageSuivant"
             style="@style/boutonSuivant"/>
 

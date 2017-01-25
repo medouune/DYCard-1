@@ -16,7 +16,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         style="?android:attr/progressBarStyleHorizontal"
-        android:progress="70"
+        android:progress="64"
         android:max="100"
         android:secondaryProgress="80"/>
 
@@ -24,14 +24,17 @@
         android:text="@string/selectionne_les_destinataires"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
         android:id="@+id/textView2"
         android:textSize="20dp"
+        android:textStyle="bold"
         android:layout_gravity="center"/>
 
     <Button
-        android:text="ajouter un nouveau destinataire"
+        android:text="@string/ajouter_nouveau_destinataire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:id="@+id/button3"
         android:layout_gravity="center"
         android:onClick="ajouterUnNouveauDestinataire"
@@ -46,16 +49,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
     <TextView
-        android:text="Le prix de ta carte est :"
+        android:text="@string/prix_commande"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView5" />
     <Button
-        android:text="@string/envoyer_ma_carte_ces_destinataires"
+        android:text="@string/envoyer_destinataires"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:id="@+id/button"
         android:onClick="envoyerDestinataire"
         style="@style/bouton" />
     </LinearLayout>
@@ -70,47 +73,24 @@
             android:text="@string/buttonPrecedent"
             android:layout_width="116dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="right"
             android:layout_weight="0.50"
-            android:id="@+id/button2"
             android:onClick="precedent"
             style="@style/boutonPrecedent"/>
 
+        <Space
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_width="181dp" />
+
 
         <Button
-            android:text="Suivant"
+            android:text="@string/buttonSuivant"
             android:layout_width="116dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="right"
             android:layout_weight="0.50"
             android:onClick="suivantActivityDestinataire"
             style="@style/boutonSuivant"/>
 
     </LinearLayout>
-
-
-
-    <!--<SeekBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:id="@+id/seekBar2"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
-
-    <ProgressBar
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_alignStart="@+id/button3"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="34dp"
-        android:id="@+id/progressBar" />-->
-
-
-
 
 </LinearLayout>

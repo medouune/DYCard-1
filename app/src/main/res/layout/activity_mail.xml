@@ -9,8 +9,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.simon.dycard.activities.activity_mail">
+    tools:context="com.example.simon.dycard.activities.activity_mail"
+    >
 
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
     <TextView
         android:text="@string/recupMdp"
@@ -21,21 +27,26 @@
         android:layout_gravity="center"/>
 
     <EditText
-        android:text="Email"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
+        android:text="@string/email"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/Mail"
         android:layout_below="@+id/Recuperationmotdepasse"/>
 
     <Button
-        android:text="@string/OK"
+        android:text="@string/Valider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/OK"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        style="@style/bouton"/>
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
 
 </LinearLayout>

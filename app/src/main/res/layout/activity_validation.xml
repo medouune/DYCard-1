@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="wrap_content"
-    android:layout_width="wrap_content">
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/activity_validation"
@@ -12,13 +12,14 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
         android:orientation="vertical"
+        android:weightSum="1"
         tools:context="com.example.simon.dycard.Validation">
 
         <ProgressBar
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             style="?android:attr/progressBarStyleHorizontal"
-            android:progress="70"
+            android:progress="100"
             android:max="100"
             android:secondaryProgress="80"/>
 
@@ -26,6 +27,10 @@
             android:text="@string/validation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
             android:id="@+id/textView2"
             android:layout_gravity="center"/>
 
@@ -57,7 +62,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
-            android:text="Parametres"
+            android:text="@string/parametres"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="normal|bold"
@@ -72,32 +77,33 @@
             android:textColor="@android:color/black"
             android:textStyle="normal|bold"/>
 
-        <Space
+        <android.support.v4.widget.Space
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
+            android:orientation="horizontal">
+
             <Button
-                android:text="Modifier"
+                android:text="@string/modifier"
                 android:layout_width="116dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_gravity="right"
                 android:layout_weight="0.50"
                 android:onClick="modifierparametres"
                 style="@style/boutonPrecedent"/>
 
+            <Space
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_width="181dp" />
+
             <Button
-                android:text="Accéder au paiement"
-                android:layout_width="116dp"
+                android:text="@string/paiement"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_gravity="right"
                 android:layout_weight="0.50"
                 android:onClick="payer"
                 style="@style/boutonSuivant"/>

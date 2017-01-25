@@ -12,10 +12,17 @@
     android:background="@color/background"
     tools:context="com.example.simon.dycard.activities.InscriptionActivity">
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
     <EditText
         android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
         android:inputType="textPersonName"
         android:hint="@string/pseudo"
         android:ems="10"
@@ -23,8 +30,10 @@
         android:maxLines="1" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
         android:inputType="textPassword"
         android:hint="@string/mdp"
         android:ems="10"
@@ -32,8 +41,10 @@
         android:maxLines="1" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
         android:inputType="textPassword"
         android:hint="@string/mdpConfirm"
         android:ems="10"
@@ -41,8 +52,10 @@
         android:maxLines="1" />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
         android:inputType="textEmailAddress"
         android:hint="@string/email"
         android:ems="10"
@@ -50,11 +63,12 @@
         android:maxLines="1" />
 
     <Button
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="238dp"
         android:text="@string/inscription"
-        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="sendInscription"
+        android:layout_gravity="center_horizontal"
         style="@style/bouton"/>
 
     <TextView

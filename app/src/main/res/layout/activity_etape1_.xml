@@ -17,8 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/etape1_bienvenue"
-        android:fontFamily="monospace"
-        android:textSize="20sp"/>
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"/>
 
     <Space
         android:layout_width="match_parent"
@@ -29,7 +31,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/etape1_instructions"
-        android:fontFamily="monospace"/>
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"/>
 
     <CheckBox
         android:layout_marginTop="20dp"

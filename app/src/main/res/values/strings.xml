@@ -33,16 +33,16 @@
 
 
     <!--Recup mdp Activity-->
-    <string name="recupMdp">Password recovery</string>
-    <string name="OK">OK</string>
+    <string name="recupMdp">Récupération du mot de passe</string>
+    <string name="Valider">Valider</string>
 
 
     <!--Etape1 Activity-->
-    <string name="etape1_bienvenue">Welcome</string>
-    <string name="etape1_instructions">The steps to follow to create your postcard: </string>
-    <string name="etape1_instruction1">Choose the form of your postcard</string>
-    <string name="etape1_instruction2">Choose a photo and a format for your postcard
-        The photo will cover the whole of your postcard
+    <string name="etape1_bienvenue">Bienvenue !</string>
+    <string name="etape1_instructions">Voici les étapes à suivre pour créer ta carte: </string>
+    <string name="etape1_instruction1">Choisir la forme de ta carte</string>
+    <string name="etape1_instruction2">Choisir la photo et le format de ta carte
+        La photo recouvrira l\'ensemble de ta carte
     </string>
     <string name="etape1_instruction3">Write your message on the back of the postcard</string>
     <string name="etape1_instruction4">Indicate this(these) recipient(s)
@@ -53,11 +53,7 @@
     <string name="etape1_btn_creer">Create my postcard</string>
     <string name="etape1_enveloppe">*Your postcard will be sent in an envelope</string>
 
-    <!--Destinataire Activity-->
-    <string name="enregistrer_un_destinataire">Save a recipient</string>
-    <string name="envoyer_ma_carte_ces_destinataires">Send my postcard</string>
-    <string name="selectionne_les_destinataires">Select this(these) recipient(s)</string>
-    <string name="supprimer_ces_destinataires_de_mes_historiques">Remove this(these) recipient(s)</string>
+
 
     <!--activity photo-->
     <string name="choisir_photo">Choose your photo</string>
@@ -80,9 +76,18 @@
 
 
     <!--Texte Activity-->
-    <string name="ecris_ton_texte">Write your message: </string>
-    <string name="zoomer">Zoom in</string>
-    <string name="dezoomer">Zoom out</string>
+    <string name="ecris_ton_texte">Ecris ton texte</string>
+    <string name="zoomer">Zoomer</string>
+    <string name="dezoomer">Dézoomer</string>
+
+
+    <!--Destinataire Activity-->
+    <string name="supprimer_destinataire">Supprimer ce(s) destinataire(s)</string>
+    <string name="prix_commande">Le prix de ta commande est :</string>
+    <string name="envoyer_destinataires">Envoyer ma carte</string>
+    <string name="selectionne_les_destinataires">Sélectionne le(s) destinataire(s)</string>
+    <string name="ajouter_nouveau_destinataire">Ajouter un nouveau destinataire</string>
+
 
 
     <!--Ajout destinataire Activity-->
@@ -112,13 +117,12 @@
 
     <!--validation-->
     <string name="validation">Validation</string>
-    <string name="face_avant">Front of the postcard</string>
-    <string name="face_arriere">Back of the postcard</string>
-    <string name="parametres">Settings</string>
-    <string name="destinataire">Recipient(s)</string>
-    <string name="modifier">Edit</string>
-
-    <string name="erreurConnexion">Check your Internet connection </string>
+    <string name="face_avant">Face avant de la carte postale</string>
+    <string name="face_arriere">Face arrière de la carte postale</string>
+    <string name="parametres">Paramètres</string>
+    <string name="destinataire">Destinataire(s)</string>
+    <string name="modifier">Modifier</string>
+    <string name="paiement">Accéder au paiement</string>
 
 
 </resources>

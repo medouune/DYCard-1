@@ -18,17 +18,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="?android:attr/progressBarStyleHorizontal"
-        android:progress="70"
+        android:progress="48"
         android:max="100"/>
 
     <TextView
         android:text="@string/ecris_ton_texte"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:gravity="center"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:fontFamily="casual"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center"/>
 
     <EditText
@@ -72,11 +72,9 @@
         android:orientation="horizontal">
 
         <Button
-            android:text="Précédent"
+            android:text="@string/buttonPrecedent"
             android:layout_width="116dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="right"
             android:layout_weight="0.50"
             android:onClick="textePrecedent"
             style="@style/boutonPrecedent" />
@@ -87,11 +85,9 @@
             android:layout_width="181dp" />
 
         <Button
-            android:text="Suivant"
+            android:text="@string/buttonSuivant"
             android:layout_width="116dp"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="right"
             android:layout_weight="0.50"
             android:onClick="texteSuivant"
             style="@style/boutonSuivant"/>

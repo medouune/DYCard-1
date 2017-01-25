@@ -116,5 +116,6 @@
 <string name="destinataire">Destinataire(s)</string>
 <string name="modifier">Modifier</string>
 
+    <string name="erreurConnexion">Vérifier votre connexion Internet</string>
 
 </resources>

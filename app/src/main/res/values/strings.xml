@@ -118,7 +118,7 @@
     <string name="destinataire">Recipient(s)</string>
     <string name="modifier">Edit</string>
 
-    <string name="erreurConnexion">Vérifier votre connexion Internet</string>
+    <string name="erreurConnexion">Check your Internet connection </string>
 
 
 </resources>

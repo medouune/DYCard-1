@@ -14,17 +14,17 @@
     <string name="cg">Term of use</string>
 
     <!--Inscription Activity-->
-    <string name="pseudo">Login</string>
+    <string name="pseudo">Username</string>
     <string name="mdp">Password</string>
     <string name="mdpConfirm">Retype password</string>
     <string name="email">E-mail</string>
     <string name="mdpDifferents">Passwords are different.</string>
     <string name="inscriptionSucces">Successful registration!</string>
-    <string name="inscriptionEchec">Le pseudo ou l\'adresse mail est déjà utilisé</string>
+    <string name="inscriptionEchec">The username or e-mail is already used.</string>
 
 
     <!--Connexion Activity-->
-    <string name="erreurFormulaire">Une erreur s\'est produite.</string>
+    <string name="erreurFormulaire">An error has occurred.</string>
     <string name="champsVides">Please fill in all fields.</string>
     <string name="erreurLogin">Connection error</string>
     <string name="connectionReussie">Successful connection!</string>
@@ -39,81 +39,81 @@
 
     <!--Etape1 Activity-->
     <string name="etape1_bienvenue">Welcome</string>
-    <string name="etape1_instructions">Voici les étapes à suivre pour créer ta carte: </string>
-    <string name="etape1_instruction1">Choisir la forme de ta carte</string>
+    <string name="etape1_instructions">The steps to follow to create your postcard: </string>
+    <string name="etape1_instruction1">Choose the shape of your postcard</string>
     <string name="etape1_instruction2">Choisir la photo et le format de ta carte
         La photo recouvrira l\'ensemble de ta carte
     </string>
-    <string name="etape1_instruction3">Ecrire ton message au dos de ta carte</string>
+    <string name="etape1_instruction3">Write your message on the back of the postcard</string>
     <string name="etape1_instruction4">Indiquer le(s) destinataire(s)
         La sauvegarde d\'un destinataire est possible
     </string>
-    <string name="etape1_instruction5">Valider ta commande</string>
-    <string name="etape1_instruction6">Effectuer le paiement</string>
-    <string name="etape1_btn_creer">Créer ma carte postale</string>
-    <string name="etape1_enveloppe">*Votre carte sera envoyée dans une enveloppe</string>
+    <string name="etape1_instruction5">Validate your order</string>
+    <string name="etape1_instruction6">Pay</string>
+    <string name="etape1_btn_creer">Create my postcard</string>
+    <string name="etape1_enveloppe">*Your postcard will be sent in an envelope</string>
 
     <!--Destinataire Activity-->
-    <string name="enregistrer_un_destinataire">Enregistrer un destinataire</string>
-    <string name="envoyer_ma_carte_ces_destinataires">Envoyer ma carte</string>
+    <string name="enregistrer_un_destinataire">Save a recipient</string>
+    <string name="envoyer_ma_carte_ces_destinataires">Send my postcard</string>
     <string name="selectionne_les_destinataires">Sélectionne le(s) destinataire(s)</string>
     <string name="supprimer_ces_destinataires_de_mes_historiques">Supprimer ce(s) destinataire(s) de mes historiques</string>
 
     <!--activity photo-->
     <string name="choisir_photo">Choose your photo</string>
-    <string name="importerImage">Sélectionner l\'image à importer</string>
-    <string name="format">Choisis le format de la carte : </string>
+    <string name="importerImage">Import photo</string>
+    <string name="format">Choose the format of the postcard : </string>
     <string name="format1">Polaroid</string>
     <string name="format2">A6</string>
     <string name="format3">A4</string>
 
     <!--Alerte format-->
-    <string name="alerteFormat">Veuillez sélectionner un format</string>
+    <string name="alerteFormat">Please select a format</string>
     <string name="valider">OK</string>
 
     <!--Alerte photo-->
-    <string name="alertePhoto">Veuillez sélectionner une photo</string>
+    <string name="alertePhoto">Please select a photo</string>
     <string name="oui">OK</string>
 
     <!--activity images-->
-    <string name="choisir_forme">Choisis ta forme</string>
+    <string name="choisir_forme">Choose your form</string>
 
 
     <!--Texte Activity-->
-    <string name="ecris_ton_texte">Ecris ton texte : </string>
-    <string name="zoomer">Zoomer</string>
+    <string name="ecris_ton_texte">Write your message : </string>
+    <string name="zoomer">Zoom</string>
     <string name="dezoomer">Dézoomer</string>
 
 
     <!--Ajout destinataire Activity-->
-    <string name="buttonDestinataire">Ajouter ce destinataire</string>
+    <string name="buttonDestinataire">Add this recipient </string>
     <string name="nom">Last name</string>
     <string name="prenom">First name</string>
     <string name="adresse">Address</string>
     <string name="codepostal">Postal Code</string>
     <string name="ville">City</string>
     <string name="pays">Country</string>
-    <string name="ajout_destinataire">Ajouter un destinataire</string>
+    <string name="ajout_destinataire">Add a recipient</string>
 
 
 
     <!--popup destinataire-->
-    <string name="popupDestinataire">Veuillez sélectionner au moins un destinataire</string>
+    <string name="popupDestinataire">Please select at least one recipient</string>
     <string name="ok">Ok</string>
 
     <string name="popupSupprimerDestinataire">Êtes-vous sûr(e) de vouloir supprimer ce(s) destinataire(s)?</string>
-    <string name="yes">Oui</string>
-    <string name="no">Non</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 
 
 
     <!--validation-->
     <string name="validation">Validation</string>
-    <string name="face_avant">Face avant de la carte postale</string>
-    <string name="face_arriere">Face arrière de la carte postale</string>
-    <string name="parametres">Paramètres</string>
+    <string name="face_avant">Front of the postcard</string>
+    <string name="face_arriere">Back of the postcard</string>
+    <string name="parametres">Settings</string>
     <string name="destinataire">Destinataire(s)</string>
-    <string name="modifier">Modifier</string>
+    <string name="modifier">Edit</string>
 
 
 </resources>

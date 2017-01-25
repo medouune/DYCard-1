@@ -10,7 +10,7 @@
     <!--Main Activity-->
     <string name="connexion">To log in</string>
     <string name="inscription">Sign in</string>
-    <string name="connexionFacebook">Sign in with facebook</string>
+    <string name="connexionFacebook">Sign in with Facebook</string>
     <string name="cg">Term of use</string>
 
     <!--Inscription Activity-->
@@ -40,7 +40,7 @@
     <!--Etape1 Activity-->
     <string name="etape1_bienvenue">Welcome</string>
     <string name="etape1_instructions">The steps to follow to create your postcard: </string>
-    <string name="etape1_instruction1">Choose the shape of your postcard</string>
+    <string name="etape1_instruction1">Choose the form of your postcard</string>
     <string name="etape1_instruction2">Choose a photo and a format for your postcard
         The photo will cover the whole of your postcard
     </string>
@@ -80,9 +80,9 @@
 
 
     <!--Texte Activity-->
-    <string name="ecris_ton_texte">Write your message : </string>
-    <string name="zoomer">Zoom</string>
-    <string name="dezoomer">Dézoomer</string>
+    <string name="ecris_ton_texte">Write your message: </string>
+    <string name="zoomer">Zoom in</string>
+    <string name="dezoomer">Zoom out</string>
 
 
     <!--Ajout destinataire Activity-->

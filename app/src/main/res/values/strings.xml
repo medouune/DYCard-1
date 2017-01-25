@@ -8,7 +8,7 @@
 
 
     <!--Main Activity-->
-    <string name="connexion">Se connecter</string>
+    <string name="connexion">To log in</string>
     <string name="inscription">Sign in</string>
     <string name="connexionFacebook">Sign in with facebook</string>
     <string name="cg">Term of use</string>
@@ -18,18 +18,18 @@
     <string name="mdp">Password</string>
     <string name="mdpConfirm">Retype password</string>
     <string name="email">E-mail</string>
-    <string name="mdpDifferents">Les mots de passe sont différents.</string>
-    <string name="inscriptionSucces">Inscription réussie</string>
+    <string name="mdpDifferents">Passwords are different.</string>
+    <string name="inscriptionSucces">Successful registration!</string>
     <string name="inscriptionEchec">Le pseudo ou l\'adresse mail est déjà utilisé</string>
 
 
     <!--Connexion Activity-->
     <string name="erreurFormulaire">Une erreur s\'est produite.</string>
-    <string name="champsVides">Veuillez remplir tous les champs.</string>
-    <string name="erreurLogin">Erreur de connexion</string>
-    <string name="connectionReussie">Connection Réussie !</string>
-    <string name="erreur">Mauvais Identifiants</string>
-    <string name="mdp_oublie">Mot de passe oublié</string>
+    <string name="champsVides">Please fill in all fields.</string>
+    <string name="erreurLogin">Connection error</string>
+    <string name="connectionReussie">Successful connection!</string>
+    <string name="erreur">Wrong login </string>
+    <string name="mdp_oublie">Forgot your password</string>
 
 
     <!--Recup mdp Activity-->

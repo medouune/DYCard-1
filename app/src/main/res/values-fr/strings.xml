@@ -56,11 +56,10 @@
 
 <!--Destinataire Activity-->
 
-<string name="envoyer_ma_carte_ces_destinataires">Envoyer ma carte</string>
-    <string name="prix_commande">Le prix de ta commande est :</string>
+<string name="prix_commande">Le prix de ta commande est :</string>
 <string name="selectionne_les_destinataires">Sélectionne le(s) destinataire(s)</string>
 <string name="supprimer_ces_destinataires_de_mes_historiques">Supprimer ce(s) destinataire(s) </string>
-    <string name="ajouter_nouveau_destinataire">Ajouter un nouveau destinataire</string>
+<string name="ajouter_nouveau_destinataire">Ajouter un nouveau destinataire</string>
 
 <!--activity photo-->
 <string name="choisir_photo">Choisis ta photo</string>
@@ -107,7 +106,6 @@
 <!--popup destinataire-->
 <string name="popupDestinataire">Veuillez sélectionner au moins un destinataire</string>
 <string name="ok">Ok</string>
-
 <string name="popupSupprimerDestinataire">Êtes-vous sûr(e) de vouloir supprimer ce(s) destinataire(s)?</string>
 <string name="yes">Oui</string>
 <string name="no">Non</string>
@@ -121,8 +119,7 @@
 <string name="parametres">Paramètres</string>
 <string name="destinataire">Destinataire(s)</string>
 <string name="modifier">Modifier</string>
-    <string name="paiement">Accéder au paiement</string>
-
+<string name="paiement">Accéder au paiement</string>
     <string name="erreurConnexion">Vérifier votre connexion Internet</string>
 
 </resources>

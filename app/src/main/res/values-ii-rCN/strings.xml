@@ -1,2 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">DYCard</string>
+    <string name="logo">Logo</string>
+
+    <!--Button-->
+    <string name="buttonPrecedent">上一页</string>
+    <string name="buttonSuivant">下一页</string>
+
+
+    <!--Main Activity-->
+    <string name="connexion">登陆</string>
+    <string name="inscription">注册</string>
+    <string name="connexionFacebook">用facebook账号登陆</string>
+    <string name="cg">使用条款和隐私政策</string>
+
+    <!--Inscription Activity-->
+    <string name="pseudo">昵称</string>
+    <string name="mdp">密码</string>
+    <string name="mdpConfirm">再次输入密码</string>
+    <string name="email">邮箱</string>
+    <string name="mdpDifferents">两次输入的密码不同，请重新输入</string>
+    <string name="inscriptionSucces">注册成功</string>
+    <string name="inscriptionEchec">昵称或邮箱已被使用</string>
+
+
+    <!--Connexion Activity-->
+    <string name="erreurFormulaire">错误显示</string>
+    <string name="champsVides">请填写所有空缺信息</string>
+    <string name="erreurLogin">连接错误</string>
+    <string name="connectionReussie">连接成功</string>
+    <string name="erreur">昵称错误</string>
+    <string name="mdp_oublie">忘记密码</string>
+
+
+    <!--Recup mdp Activity-->
+    <string name="recupMdp">获取密码</string>
+    <string name="Valider">确认</string>
+
+
+    <!--Etape1 Activity-->
+    <string name="etape1_bienvenue">欢迎</string>
+    <string name="etape1_instructions">使用步骤如下: </string>
+    <string name="etape1_instruction1">选择我的明信片形状</string>
+    <string name="etape1_instruction2">选择我的明信片封面照片和规格
+        （照片覆盖整张明信片）
+    </string>
+    <string name="etape1_instruction3">在明信片的背面输入文字</string>
+    <string name="etape1_instruction4">输入收件人地址信息
+        （可以保存收件人地址信息以便下次使用）
+    </string>
+    <string name="etape1_instruction5">确认我的明信片</string>
+    <string name="etape1_instruction6">付款</string>
+    <string name="etape1_btn_creer">开始设计我的明信片</string>
+    <string name="etape1_enveloppe">*明信片会被装在信封里一起邮寄</string>
+
+    <!--Destinataire Activity-->
+
+    <string name="envoyer_ma_carte_ces_destinataires">邮寄我的明信片</string>
+    <string name="prix_commande">我的订单价格 :</string>
+    <string name="selectionne_les_destinataires">选择收件人（可多选）</string>
+    <string name="supprimer_ces_destinataires_de_mes_historiques">删除收件人（可多选） </string>
+    <string name="ajouter_nouveau_destinataire">添加新的收件人</string>
+
+    <!--activity photo-->
+    <string name="choisir_photo">选择我的照片</string>
+    <string name="importerImage">选择我的明信片封面照片</string>
+    <string name="format">选择我的明信片规格 : </string>
+    <string name="format1">拍立得边框</string>
+    <string name="format2">A6</string>
+    <string name="format3">A4</string>
+
+    <!--popup format-->
+    <string name="alerteFormat">请选择我的明信片规格</string>
+    <string name="valider">OK</string>
+
+    <!--Alerte photo-->
+    <string name="alertePhoto">请选择我的明信片封面照片</string>
+    <string name="oui">OK</string>
+
+    <!--activity images-->
+    <string name="choisir_forme">请选择我的明信片形状</string>
+
+
+    <!--Texte Activity-->
+    <string name="ecris_ton_texte">输入文字 : </string>
+    <string name="zoomer">放大</string>
+    <string name="dezoomer">缩小</string>
+
+
+    <!--Ajout destinataire Activity-->
+    <string name="buttonDestinataire">添加收件人</string>
+    <string name="nom">姓</string>
+    <string name="prenom">名</string>
+    <string name="adresse">地址</string>
+    <string name="codepostal">邮编</string>
+    <string name="ville">城市</string>
+    <string name="pays">国家</string>
+    <string name="ajout_destinataire">添加收件人</string>
+    <string name="ajoutDestEchec">已经添加过这个收件地址</string>
+    <string name="alerteDestinataire">请填写所有空缺信息</string>
+    <string name="ajoutDestSucces">添加收件人成功 </string>
+
+
+
+
+    <!--popup destinataire-->
+    <string name="popupDestinataire">请选择至少一个收件人</string>
+    <string name="ok">Ok</string>
+
+    <string name="popupSupprimerDestinataire">确认删除收件人?</string>
+    <string name="yes">确认删除</string>
+    <string name="no">取消</string>
+
+
+
+    <!--validation-->
+    <string name="validation">确认我的明信片</string>
+    <string name="face_avant">明信片正面</string>
+    <string name="face_arriere">明信片背面</string>
+    <string name="parametres">明信片规格</string>
+    <string name="destinataire">收件人</string>
+    <string name="modifier">修改</string>
+    <string name="paiement">确认并付款</string>
+
+    <string name="erreurConnexion">请确认网络链接</string>
+
+</resources>

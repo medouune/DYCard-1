@@ -56,10 +56,11 @@
         android:onClick="mail"
         android:gravity="center"/>
 
-    <android.support.v4.widget.Space
+    <Space
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
+
 
     <Button
         android:text="suivant"
@@ -69,11 +70,7 @@
         android:layout_gravity="bottom"
         style="@style/boutonSuivant"/>
 
-    <TextView
-        android:text="@string/cg"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView3"
-        android:gravity="bottom|center" />
+
+
 </LinearLayout>
 </ScrollView>

@@ -19,8 +19,7 @@
         android:layout_height="wrap_content"
         style="?android:attr/progressBarStyleHorizontal"
         android:progress="32"
-        android:max="100"
-        android:secondaryProgress="80"/>
+        android:max="100"/>
 
     <TextView
         android:text="@string/choisir_photo"

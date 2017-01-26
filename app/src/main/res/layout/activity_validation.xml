@@ -20,8 +20,7 @@
             android:layout_height="wrap_content"
             style="?android:attr/progressBarStyleHorizontal"
             android:progress="100"
-            android:max="100"
-            android:secondaryProgress="80"/>
+            android:max="100"/>
 
         <TextView
             android:text="@string/validation"
@@ -89,9 +88,8 @@
 
             <Button
                 android:text="@string/modifier"
-                android:layout_width="116dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.50"
                 android:onClick="modifierparametres"
                 style="@style/boutonPrecedent"/>
 
@@ -104,7 +102,6 @@
                 android:text="@string/paiement"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.50"
                 android:onClick="payer"
                 style="@style/boutonSuivant"/>
         </LinearLayout>

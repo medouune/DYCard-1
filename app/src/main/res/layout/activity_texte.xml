@@ -76,9 +76,8 @@
 
         <Button
             android:text="@string/buttonPrecedent"
-            android:layout_width="116dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.50"
             android:onClick="textePrecedent"
             style="@style/boutonPrecedent" />
 
@@ -89,9 +88,8 @@
 
         <Button
             android:text="@string/buttonSuivant"
-            android:layout_width="116dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.50"
             android:onClick="texteSuivant"
             style="@style/boutonSuivant"/>
 

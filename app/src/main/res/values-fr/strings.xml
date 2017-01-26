@@ -35,7 +35,7 @@
 
 <!--Recup mdp Activity-->
 <string name="recupMdp">Récupération du mot de passe</string>
-<string name="OK">OK</string>
+    <string name="Valider">Valider</string>
 
 
 <!--Etape1 Activity-->
@@ -55,10 +55,12 @@
 <string name="etape1_enveloppe">*Votre carte sera envoyée dans une enveloppe</string>
 
 <!--Destinataire Activity-->
-<string name="enregistrer_un_destinataire">Enregistrer un destinataire</string>
+
 <string name="envoyer_ma_carte_ces_destinataires">Envoyer ma carte</string>
+    <string name="prix_commande">Le prix de ta commande est :</string>
 <string name="selectionne_les_destinataires">Sélectionne le(s) destinataire(s)</string>
-<string name="supprimer_ces_destinataires_de_mes_historiques">Supprimer ce(s) destinataire(s) de mes historiques</string>
+<string name="supprimer_ces_destinataires_de_mes_historiques">Supprimer ce(s) destinataire(s) </string>
+    <string name="ajouter_nouveau_destinataire">Ajouter un nouveau destinataire</string>
 
 <!--activity photo-->
 <string name="choisir_photo">Choisis ta photo</string>
@@ -119,6 +121,7 @@
 <string name="parametres">Paramètres</string>
 <string name="destinataire">Destinataire(s)</string>
 <string name="modifier">Modifier</string>
+    <string name="paiement">Accéder au paiement</string>
 
     <string name="erreurConnexion">Vérifier votre connexion Internet</string>
 

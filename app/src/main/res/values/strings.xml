@@ -38,11 +38,11 @@
 
 
     <!--Etape1 Activity-->
-    <string name="etape1_bienvenue">Bienvenue !</string>
+    <string name="etape1_bienvenue">Welcome !</string>
     <string name="etape1_instructions">Voici les étapes à suivre pour créer ta carte: </string>
-    <string name="etape1_instruction1">Choisir la forme de ta carte</string>
-    <string name="etape1_instruction2">Choisir la photo et le format de ta carte
-        La photo recouvrira l\'ensemble de ta carte
+    <string name="etape1_instruction1">Choose the format for your postcard</string>
+    <string name="etape1_instruction2">Choose the photo and format for your postcardChoisir la photo et le format de ta carte
+        The photo La photo recouvrira l\'ensemble de ta carte
     </string>
     <string name="etape1_instruction3">Write your message on the back of the postcard</string>
     <string name="etape1_instruction4">Indicate this(these) recipient(s)
@@ -76,9 +76,9 @@
 
 
     <!--Texte Activity-->
-    <string name="ecris_ton_texte">Ecris ton texte</string>
-    <string name="zoomer">Zoomer</string>
-    <string name="dezoomer">Dézoomer</string>
+    <string name="ecris_ton_texte">Write your message</string>
+    <string name="zoomer">Zoom in</string>
+    <string name="dezoomer">Zoom out</string>
 
 
     <!--Destinataire Activity-->

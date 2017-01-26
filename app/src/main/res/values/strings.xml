@@ -33,8 +33,8 @@
 
 
     <!--Recup mdp Activity-->
-    <string name="recupMdp">Récupération du mot de passe</string>
-    <string name="Valider">Valider</string>
+    <string name="recupMdp">Password recovery</string>
+    <string name="Valider">OK</string>
 
 
     <!--Etape1 Activity-->
@@ -42,7 +42,7 @@
     <string name="etape1_instructions">Voici les étapes à suivre pour créer ta carte: </string>
     <string name="etape1_instruction1">Choose the format for your postcard</string>
     <string name="etape1_instruction2">Choose the photo and format for your postcardChoisir la photo et le format de ta carte
-        The photo La photo recouvrira l\'ensemble de ta carte
+        The photo will cover the whole of your postcard
     </string>
     <string name="etape1_instruction3">Write your message on the back of the postcard</string>
     <string name="etape1_instruction4">Indicate this(these) recipient(s)
@@ -82,11 +82,11 @@
 
 
     <!--Destinataire Activity-->
-    <string name="supprimer_destinataire">Supprimer ce(s) destinataire(s)</string>
-    <string name="prix_commande">Le prix de ta commande est :</string>
-    <string name="envoyer_destinataires">Envoyer ma carte</string>
-    <string name="selectionne_les_destinataires">Sélectionne le(s) destinataire(s)</string>
-    <string name="ajouter_nouveau_destinataire">Ajouter un nouveau destinataire</string>
+    <string name="supprimer_destinataire">Delete this(these) recipient(s)</string>
+    <string name="prix_commande">The price for your order is :</string>
+    <string name="envoyer_destinataires">Send my postcard</string>
+    <string name="selectionne_les_destinataires">Select a recipient(s)</string>
+    <string name="ajouter_nouveau_destinataire">Add a new recipient</string>
 
 
 
@@ -117,12 +117,12 @@
 
     <!--validation-->
     <string name="validation">Validation</string>
-    <string name="face_avant">Face avant de la carte postale</string>
-    <string name="face_arriere">Face arrière de la carte postale</string>
-    <string name="parametres">Paramètres</string>
-    <string name="destinataire">Destinataire(s)</string>
-    <string name="modifier">Modifier</string>
-    <string name="paiement">Accéder au paiement</string>
+    <string name="face_avant">Front of the postcard</string>
+    <string name="face_arriere">Back of the postcard</string>
+    <string name="parametres">Settings</string>
+    <string name="destinataire">Recipient(s)</string>
+    <string name="modifier">Edit</string>
+    <string name="paiement">Pay</string>
 
 
 </resources>

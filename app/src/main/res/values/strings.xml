@@ -34,7 +34,7 @@
 
     <!--Recup mdp Activity-->
     <string name="recupMdp">Password recovery</string>
-    <string name="Valider">OK</string>
+    <string name="Valider">Confirm</string>
 
 
     <!--Etape1 Activity-->

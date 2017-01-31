@@ -122,7 +122,7 @@
     <string name="parametres">Settings</string>
     <string name="destinataire">Recipient(s)</string>
     <string name="modifier">Edit</string>
-    <string name="paiement">Pay</string>
+    <string name="paiement">Payment method</string>
 
 
 </resources>

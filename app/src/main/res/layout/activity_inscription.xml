@@ -68,6 +68,27 @@
         android:id="@+id/inscription_editText_email"
         android:maxLines="1" />
 
+    <ImageView
+        android:id="@+id/captcha"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/ansUser" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Changer image"
+        style="@style/bouton"
+        android:onClick="changer"/>
+
     <Button
         android:layout_marginTop="20dp"
         android:layout_width="238dp"

@@ -5,11 +5,16 @@ import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.SeekBar;
 
 import com.example.simon.dycard.R;
+import com.example.simon.dycard.util.CustomListFormeAdapter;
 
 public class Images_Activity extends AppCompatActivity {
+
+    private ListView listeForme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

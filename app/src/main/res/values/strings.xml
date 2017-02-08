@@ -124,5 +124,7 @@
     <string name="modifier">Edit</string>
     <string name="paiement">Payment method</string>
 
+    <string name="erreurConnexion">Check your Internet connection</string>
+
 
 </resources>

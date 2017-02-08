@@ -3,6 +3,8 @@ package com.example.simon.dycard.activities;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Matrix;
+import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v7.app.AlertDialog;
@@ -12,14 +14,18 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 
+import com.github.siyamed.shapeimageview.ShapeImageView;
+
 import com.example.simon.dycard.R;
 import com.example.simon.dycard.util.MySingleton;
+import com.github.siyamed.shapeimageview.mask.PorterImageView;
+import com.github.siyamed.shapeimageview.mask.PorterShapeImageView;
 
 import java.io.IOException;
 
 public class Choose_photo_activity extends AppCompatActivity {
 
-    private ImageView imageView;
+    private PorterImageView imageView;
     private Bitmap bitmap;
     private String choix;
 
@@ -29,7 +35,7 @@ public class Choose_photo_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_photo);
 
-        imageView = (ImageView)findViewById(R.id.photo);
+        imageView = (PorterShapeImageView)findViewById(R.id.photo);
     }
 
     private void showFileChooser() {
@@ -49,6 +55,7 @@ public class Choose_photo_activity extends AppCompatActivity {
             try {
                 bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), filePath);
                 imageView.setImageBitmap(bitmap);
+
             }catch (IOException e) {
                 e.printStackTrace();
             }
@@ -84,8 +91,9 @@ public class Choose_photo_activity extends AppCompatActivity {
 
     public void suivantActivityTexte(View v) {
         if(bitmap != null && choix != null) {
+            Bitmap result = ((BitmapDrawable)imageView.getDrawable()).getBitmap();
             MySingleton.getInstance(Choose_photo_activity.this).getCommande().setFormat(choix);
-            MySingleton.getInstance(Choose_photo_activity.this).getCommande().setPhoto(bitmap);
+            MySingleton.getInstance(Choose_photo_activity.this).getCommande().setPhoto(result);
             Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
             startActivity(intent);
         } else if(bitmap == null){

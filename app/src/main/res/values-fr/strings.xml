@@ -86,8 +86,11 @@
 <string name="zoomer">Zoomer</string>
 <string name="dezoomer">Dézoomer</string>
 
+    <!--Activiter liste destinataires-->
+    <string name="chargementDest">Chargement de vos destinataires</string>
 
-<!--Ajout destinataire Activity-->
+
+<!--Ajout ajouter destinataire Activity-->
 <string name="buttonDestinataire">Ajouter ce destinataire</string>
 <string name="nom">Nom</string>
 <string name="prenom">Prenom</string>
@@ -121,5 +124,6 @@
 <string name="modifier">Modifier</string>
 <string name="paiement">Accéder au paiement</string>
     <string name="erreurConnexion">Vérifier votre connexion Internet</string>
+
 
 </resources>

@@ -12,18 +12,16 @@ public class Destinataire {
     private String codePostal;
     private String ville;
     private String pays;
-    private int idUser;
 
     public Destinataire() {}
 
-    public Destinataire(String nom, String prenom, String adresse, String codePostal, String ville, String pays, int idUser) {
+    public Destinataire(String nom, String prenom, String adresse, String codePostal, String ville) {
         this.nom = nom;
         this.prenom = prenom;
         this.adresse = adresse;
         this.codePostal = codePostal;
         this.ville = ville;
         this.pays = pays;
-        this.idUser = idUser;
     }
 
     public String getNom() {
@@ -68,14 +66,6 @@ public class Destinataire {
 
     public String getPays() {
         return pays;
-    }
-
-    public int getIdUser() {
-        return idUser;
-    }
-
-    public void setIdUser(int idUser) {
-        this.idUser = idUser;
     }
 
     public void setPays(String pays) {

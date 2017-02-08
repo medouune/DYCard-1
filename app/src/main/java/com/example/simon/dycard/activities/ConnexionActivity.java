@@ -29,7 +29,7 @@ public class ConnexionActivity extends AppCompatActivity {
 
     private EditText Pseudo, Password;
     private String pseudo, password;
-    private String LOGIN_URL = "http://192.168.1.34/DYCard/WebServiceDYCard/login";
+    private String LOGIN_URL = "http://192.168.1.34/DYCard/WebServiceDYCard/login.php";
     private AlertDialog.Builder builder;
 
     @Override
@@ -80,8 +80,7 @@ public class ConnexionActivity extends AppCompatActivity {
                     }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(ConnexionActivity.this, getString(R.string.erreur), Toast.LENGTH_SHORT).show();
-                    error.printStackTrace();
+                    displayAlert(getResources().getString(R.string.erreurConnexion));
                 }
             })
             {
@@ -110,7 +109,7 @@ public class ConnexionActivity extends AppCompatActivity {
         alertDialog.show();
     }
 
-    public void mdp_oublie(View v) {
+    public void mail(View v) {
         // TODO: 05/01/2017 Gérer le cas ou l'utilisateur à oublié son mot de passe
         Intent intent = new Intent(ConnexionActivity.this, activity_mail.class);
         startActivity(intent);

@@ -28,9 +28,10 @@ import java.util.Map;
 
 public class activity_ajoutdestinataire extends AppCompatActivity {
 
-    private String AJOUT_DEST_URL = "http://192.168.0.37/DYCard/WebServiceDYCard/enregistrer_destinataire";
+    private String AJOUT_DEST_URL = "http://192.168.1.34/DYCard/WebServiceDYCard/enregistrer_destinataire.php";
     private EditText Nom, Prenom, Adresse, CodePostal, Ville, Pays;
     private String nom, prenom, adresse, codePostal, ville, pays;
+    private Context mContext;
     private AlertDialog.Builder builder;
 
 
@@ -38,6 +39,9 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajoutdestinataire);
+
+        mContext = getApplicationContext();
+        builder = new AlertDialog.Builder(mContext);
 
         Nom = (EditText)findViewById(R.id.destinataireNom);
         Prenom = (EditText)findViewById(R.id.destinatairePrenom);
@@ -59,9 +63,7 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
 
         if(nom.equals("") || prenom.equals("") || adresse.equals("") || codePostal.equals("") ||
                 ville.equals("") || pays.equals("")) {
-
-            displayAlert(getResources().getString(R.string.alerteDestinataire));
-
+            Toast.makeText(mContext, getResources().getString(R.string.alerteDestinataire), Toast.LENGTH_SHORT).show();
         } else {
             StringRequest stringRequest = new StringRequest(Request.Method.POST, AJOUT_DEST_URL,
                     new Response.Listener<String>() {
@@ -76,7 +78,7 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
                                     finish();
                                 }
                                 else {
-                                    displayAlert(getResources().getString(R.string.ajoutDestEchec));
+                                    Toast.makeText(mContext, getResources().getString(R.string.ajoutDestEchec), Toast.LENGTH_SHORT).show();
                                 }
                             }catch (JSONException e) {
                                 e.printStackTrace();
@@ -86,7 +88,7 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
                     }, new Response.ErrorListener() {
                 @Override
                 public void onErrorResponse(VolleyError error) {
-                    displayAlert(getResources().getString(R.string.erreurConnexion));
+                    Toast.makeText(mContext, getResources().getString(R.string.erreurConnexion), Toast.LENGTH_SHORT).show();
                 }
             }){
                 @Override
@@ -98,11 +100,11 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
                     params.put("codePostal", codePostal);
                     params.put("ville", ville);
                     params.put("pays", pays);
-                    params.put("idUser", String.valueOf(MySingleton.getInstance(activity_ajoutdestinataire.this).getUser().getId()));
+                    params.put("idUser", String.valueOf(MySingleton.getInstance(mContext).getUser().getId()));
                     return params;
                 }
             };
-            MySingleton.getInstance(activity_ajoutdestinataire.this).addToRequestque(stringRequest);
+            MySingleton.getInstance(mContext).addToRequestque(stringRequest);
 
         }
 

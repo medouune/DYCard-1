@@ -31,5 +31,6 @@ public class Images_Activity extends AppCompatActivity {
     public void imageSuivant(View v) {
         Intent intent = new Intent(Images_Activity.this, Choose_photo_activity.class);
         startActivity(intent);
+        finish();
     }
 }

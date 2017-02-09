@@ -71,19 +71,19 @@
             android:text="@string/format1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/format1"
+            android:id="@+id/polaroid"
             android:onClick="choixFormat"/>
         <RadioButton
             android:text="@string/format2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/format2"
+            android:id="@+id/A4"
             android:onClick="choixFormat"/>
         <RadioButton
             android:text="@string/format3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/format3"
+            android:id="@+id/A6"
             android:onClick="choixFormat"/>
 
     </RadioGroup>

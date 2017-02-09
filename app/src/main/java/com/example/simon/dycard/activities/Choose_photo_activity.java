@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 
+import com.example.simon.dycard.model.Commande;
 import com.github.siyamed.shapeimageview.ShapeImageView;
 
 import com.example.simon.dycard.R;
@@ -28,6 +29,9 @@ public class Choose_photo_activity extends AppCompatActivity {
     private PorterImageView imageView;
     private Bitmap bitmap;
     private String choix;
+    private double prix;
+    private Commande commande;
+    private RadioButton polaroid, A6, A4;
 
     private int PICK_IMAGE_REQUEST = 1;
     @Override
@@ -35,7 +39,30 @@ public class Choose_photo_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose_photo);
 
+        commande = MySingleton.getInstance(Choose_photo_activity.this).getCommande();
+
         imageView = (PorterShapeImageView)findViewById(R.id.photo);
+
+        polaroid = (RadioButton)findViewById(R.id.polaroid);
+        A6 = (RadioButton)findViewById(R.id.A6);
+        A4 = (RadioButton)findViewById(R.id.A4);
+
+        if(commande.getPhoto()!=null){
+            bitmap = commande.getPhoto();
+            imageView.setImageBitmap(bitmap);
+        }
+
+
+        if(commande.getFormat()!=null){
+            String format = commande.getFormat();
+            if(format.equals("Polaroïd"))
+                polaroid.setChecked(true);
+            else if(format.equals("A4"))
+                A4.setChecked(true);
+            else if(format.equals("A6"))
+                A6.setChecked(true);
+        }
+
     }
 
     private void showFileChooser() {
@@ -66,17 +93,23 @@ public class Choose_photo_activity extends AppCompatActivity {
         boolean checked = ((RadioButton) v).isChecked();
 
         switch(v.getId()) {
-            case R.id.format1:
-                if(checked)
-                    choix = "format1";
+            case R.id.polaroid:
+                if(checked){
+                    choix = "Polaroïd";
+                    prix = 2.39;
+                }
                 break;
-            case R.id.format2:
-                if(checked)
-                    choix = "format2";
+            case R.id.A6:
+                if(checked){
+                    choix = "A6";
+                    prix = 3.39;
+                }
                 break;
-            case R.id.format3:
-                if(checked)
-                    choix = "format3";
+            case R.id.A4:
+                if(checked){
+                    choix = "A4";
+                    prix = 4.39;
+                }
                 break;
         }
     }
@@ -86,16 +119,19 @@ public class Choose_photo_activity extends AppCompatActivity {
     }
 
     public void precedentImagesActivity(View v) {
+        startActivity(new Intent(Choose_photo_activity.this, Images_Activity.class));
         finish();
     }
 
     public void suivantActivityTexte(View v) {
         if(bitmap != null && choix != null) {
             Bitmap result = ((BitmapDrawable)imageView.getDrawable()).getBitmap();
-            MySingleton.getInstance(Choose_photo_activity.this).getCommande().setFormat(choix);
-            MySingleton.getInstance(Choose_photo_activity.this).getCommande().setPhoto(result);
+            commande.setFormat(choix);
+            commande.setPhoto(result);
+            commande.setPrix(prix);
             Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
             startActivity(intent);
+            finish();
         } else if(bitmap == null){
             afficherAlerte(getResources().getString(R.string.alertePhoto));
         } else

@@ -16,6 +16,7 @@ public class Commande {
     private String format;
     private String texte;
     private List<Destinataire> destinataires;
+    private double prix;
 
     public Commande() {}
 
@@ -65,5 +66,17 @@ public class Commande {
 
     public void setDestinataires(List<Destinataire> destinataires) {
         this.destinataires = destinataires;
+    }
+
+    public double getPrix() {
+        return prix;
+    }
+
+    public void setPrix(double prix) {
+        this.prix = prix;
+    }
+
+    public double commandePrix(){
+        return prix*destinataires.size();
     }
 }

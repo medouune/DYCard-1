@@ -98,6 +98,7 @@ public class activity_destinataire extends AppCompatActivity {
     }
 
     public void precedent(View v) {
+        startActivity(new Intent(activity_destinataire.this, activity_texte.class));
         finish();
     }
 
@@ -110,7 +111,7 @@ public class activity_destinataire extends AppCompatActivity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            Toast.makeText(mContext, getResources().getString(R.string.chargementDest), Toast.LENGTH_SHORT).show();
+            Toast.makeText(mContext, R.string.chargementDest, Toast.LENGTH_SHORT).show();
         }
 
         @Override

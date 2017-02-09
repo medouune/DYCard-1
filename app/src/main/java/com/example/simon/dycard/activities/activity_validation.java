@@ -63,10 +63,10 @@ public class activity_validation extends AppCompatActivity {
 
     public void payer(View view)
     {
-        PayPalPayment payment = new PayPalPayment(new BigDecimal(2.33), "EUR", "Test payment with Paypal",
+        PayPalPayment payment = new PayPalPayment(new BigDecimal(commande.getPrix()), "EUR", "Test payment with Paypal",
                 PayPalPayment.PAYMENT_INTENT_SALE);
 
-        Intent intent = new Intent(this, PaymentActivity.class); // it's not paypalpayment, it's paymentactivity !
+        Intent intent = new Intent(this, PaymentActivity.class);
         intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, m_configuration);
         intent.putExtra(PaymentActivity.EXTRA_PAYMENT, payment);
         startActivityForResult(intent, m_paypalRequestCode);

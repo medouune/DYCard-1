@@ -45,6 +45,11 @@
         android:onClick="ajouterUnNouveauDestinataire"
         style="@style/bouton" />
 
+    <ListView
+        android:id="@+id/lvDestinataires"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -61,9 +66,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView5" />
 
+        <EditText
+            android:id="@+id/etPrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
-
-
 
 
     <LinearLayout

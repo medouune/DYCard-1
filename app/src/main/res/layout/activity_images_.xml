@@ -35,31 +35,57 @@
         android:textStyle="bold"
         android:id="@+id/textView4" />
 
-    <ImageView
+    <ImageButton
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@drawable/diamond"/>
+        android:background="@drawable/cadreplantes"
+        android:onClick="cadreplantes"/>
 
-    <ImageView
+    <ImageButton
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@drawable/star"/>
+        android:background="@drawable/chat"
+        android:onClick="chat"/>
 
-
-    <ImageView
+    <ImageButton
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@drawable/heart"/>
+        android:background="@drawable/ovale"
+        android:onClick="ovale"/>
 
-
-    <ImageView
+    <ImageButton
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
-        android:src="@drawable/octogone"/>
+        android:background="@drawable/diamant"
+        android:onClick="diamant"/>
+
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/etoile"
+        android:onClick="etoile"/>
+
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/coeur"
+        android:onClick="coeur"/>
+
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/octo"
+        android:onClick="octo"/>
 
     <Space
         android:layout_width="wrap_content"
@@ -67,7 +93,7 @@
         android:layout_weight="1"/>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 

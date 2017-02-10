@@ -28,7 +28,7 @@ import java.util.Map;
 
 public class activity_ajoutdestinataire extends AppCompatActivity {
 
-    private String AJOUT_DEST_URL = "http://192.168.1.34/DYCard/WebServiceDYCard/enregistrer_destinataire.php";
+    private String AJOUT_DEST_URL = "http://10.20.42.184/DYCard/WebServiceDYCard/enregistrer_destinataire.php";
     private EditText Nom, Prenom, Adresse, CodePostal, Ville, Pays;
     private String nom, prenom, adresse, codePostal, ville, pays;
     private Context mContext;

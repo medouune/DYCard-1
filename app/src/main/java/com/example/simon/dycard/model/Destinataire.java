@@ -6,8 +6,18 @@ package com.example.simon.dycard.model;
 
 public class Destinataire {
 
+    private int id;
     private String nom;
     private String prenom;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String adresse;
     private String codePostal;
     private String ville;
@@ -70,5 +80,17 @@ public class Destinataire {
 
     public void setPays(String pays) {
         this.pays = pays;
+    }
+
+    @Override
+    public String toString() {
+        return "Destinataire{" +
+                "nom='" + nom + '\'' +
+                ", prenom='" + prenom + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", codePostal='" + codePostal + '\'' +
+                ", ville='" + ville + '\'' +
+                ", pays='" + pays + '\'' +
+                '}';
     }
 }

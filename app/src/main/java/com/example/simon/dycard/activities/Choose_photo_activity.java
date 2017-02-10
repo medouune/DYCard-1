@@ -54,6 +54,7 @@ public class Choose_photo_activity extends AppCompatActivity {
 
 
         if(commande.getFormat()!=null){
+            choix = commande.getFormat();
             String format = commande.getFormat();
             if(format.equals("Polaroïd"))
                 polaroid.setChecked(true);

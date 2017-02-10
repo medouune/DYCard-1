@@ -74,9 +74,12 @@
         android:layout_height="133dp"/>
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Réponse"
         android:inputType="number"
+        android:width="200dp"
         android:ems="10"
         android:id="@+id/ansUser" />
 

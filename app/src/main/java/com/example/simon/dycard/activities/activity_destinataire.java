@@ -7,7 +7,14 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -16,6 +23,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.example.simon.dycard.R;
+import com.example.simon.dycard.model.Commande;
 import com.example.simon.dycard.model.Destinataire;
 import com.example.simon.dycard.util.MySingleton;
 
@@ -30,8 +38,11 @@ import java.util.Map;
 
 public class activity_destinataire extends AppCompatActivity {
 
-    private String RECUP_DEST_URL = "http://192.168.1.34/DYCard/WebServiceDYCard/recuperer_destinataires.php";
+    private String RECUP_DEST_URL = "http://10.20.42.184/DYCard/WebServiceDYCard/recuperer_destinataires.php";
     private Context mContext;
+    private ListView lv;
+    private Commande commande;
+    private EditText Prix;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +51,23 @@ public class activity_destinataire extends AppCompatActivity {
 
         mContext = getApplicationContext();
 
-        new GetContacts().execute();
+        commande = MySingleton.getInstance(mContext).getCommande();
+
+        Prix = (EditText)findViewById(R.id.etPrix);
+        Prix.setText(String.valueOf(commande.getPrix()));
+
+        lv= (ListView) findViewById(R.id.lvDestinataires);
+
+        recupDest();
     }
 
-    private List<Destinataire> recupDestinataire(int idUser){
-        List<Destinataire> destinataires = new ArrayList<>();
+    public void majList(ArrayList<Destinataire> dest){
+        ArrayAdapter<Destinataire> adapter = new ArrayAdapter<>(mContext, R.layout.layout_destinataire, dest);
+        lv.setAdapter(adapter);
+    }
+
+    public void recupDest(){
+        final ArrayList<Destinataire> destinataires = new ArrayList<>();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, RECUP_DEST_URL,
                 new Response.Listener<String>() {
@@ -52,12 +75,20 @@ public class activity_destinataire extends AppCompatActivity {
                     public void onResponse(String response) {
                         try{
                             JSONArray jsonArray = new JSONArray(response);
-                            JSONObject jsonObject = jsonArray.getJSONObject(0);
-                            String code = jsonObject.getString("code");
+                            for(int i=0; i<jsonArray.length(); i++){
+                                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                                Destinataire d = new Destinataire();
+                                d.setId(jsonObject.getInt("id"));
+                                d.setAdresse(jsonObject.getString("adresse"));
+                                d.setPrenom(jsonObject.getString("prenom"));
+                                d.setNom(jsonObject.getString("nom"));
+                                destinataires.add(d);
+                            }
+
                         }catch (JSONException e) {
                             e.printStackTrace();
                         }
-
+                        majList(destinataires);
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -73,8 +104,6 @@ public class activity_destinataire extends AppCompatActivity {
             }
         };
         MySingleton.getInstance(mContext).addToRequestque(stringRequest);
-
-        return destinataires;
     }
 
     public void ajouterUnNouveauDestinataire(View v) {
@@ -105,24 +134,6 @@ public class activity_destinataire extends AppCompatActivity {
     public void suivantActivityDestinataire(View v) {
         Intent intentSuivant = new Intent(activity_destinataire.this, activity_validation.class);
         startActivity(intentSuivant);
-    }
-
-    private class GetContacts extends AsyncTask<Void, Void, Void> {
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-            Toast.makeText(mContext, R.string.chargementDest, Toast.LENGTH_SHORT).show();
-        }
-
-        @Override
-        protected Void doInBackground(Void... params) {
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
-        }
     }
 
 }

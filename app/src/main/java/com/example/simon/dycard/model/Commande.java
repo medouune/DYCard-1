@@ -15,7 +15,7 @@ public class Commande {
     private Bitmap photo;
     private String format;
     private String texte;
-    private List<Destinataire> destinataires;
+    private List<Integer> destinataires;
     private double prix;
 
     public Commande() {}
@@ -60,11 +60,11 @@ public class Commande {
         this.texte = texte;
     }
 
-    public List<Destinataire> getDestinataires() {
+    public List<Integer> getDestinataires() {
         return destinataires;
     }
 
-    public void setDestinataires(List<Destinataire> destinataires) {
+    public void setDestinataires(List<Integer> destinataires) {
         this.destinataires = destinataires;
     }
 
@@ -77,6 +77,13 @@ public class Commande {
     }
 
     public double commandePrix(){
-        return prix*destinataires.size();
+        int nbDest;
+
+        if(destinataires.size()<1)
+            nbDest = 1;
+        else
+            nbDest = destinataires.size();
+
+        return prix*nbDest;
     }
 }

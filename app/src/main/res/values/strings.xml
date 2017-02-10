@@ -87,7 +87,7 @@
     <string name="envoyer_destinataires">Send my postcard</string>
     <string name="selectionne_les_destinataires">Select a recipient(s)</string>
     <string name="ajouter_nouveau_destinataire">Add a new recipient</string>
-
+    <string name="chargementDest">Loading recipient...</string>
 
 
     <!--Ajout destinataire Activity-->

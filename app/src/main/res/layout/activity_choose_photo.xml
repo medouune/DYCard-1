@@ -109,7 +109,7 @@
             android:text="@string/buttonSuivant"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:onClick="suivantActivityTexte"
+            android:onClick="suivantActivityShape"
             style="@style/boutonSuivant"/>
 
     </LinearLayout>

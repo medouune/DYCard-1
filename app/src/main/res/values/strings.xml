@@ -74,6 +74,8 @@
     <!--activity images-->
     <string name="choisir_forme">Choose your form</string>
 
+    <!--activity shape photo-->
+    <string name="modifier_photo">Update your photo</string>
 
     <!--Texte Activity-->
     <string name="ecris_ton_texte">Write your message</string>

@@ -125,13 +125,13 @@ public class Choose_photo_activity extends AppCompatActivity {
         finish();
     }
 
-    public void suivantActivityTexte(View v) {
+    public void suivantActivityShape(View v) {
         if(bitmap != null && choix != null) {
             Bitmap result = ((BitmapDrawable)imageView.getDrawable()).getBitmap();
             commande.setFormat(choix);
             commande.setPhoto(result);
             commande.setPrix(prix);
-            Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
+            Intent intent = new Intent(Choose_photo_activity.this, activity_shape_photo.class);
             startActivity(intent);
             finish();
         } else if(bitmap == null){

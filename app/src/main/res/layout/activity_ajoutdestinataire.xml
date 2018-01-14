@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:id="@+id/activity_ajoutdestinataire"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.simon.dycard.activities.activity_ajoutdestinataire"
+    android:background="@color/background">
+
+    <ProgressBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progress="80"
+        android:max="100"/>
+
+    <TextView
+        android:text="@string/ajout_destinataire"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:id="@+id/textView2"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/destinataireNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:inputType="textPersonName"
+        android:hint="@string/nom" />
+
+    <EditText
+        android:id="@+id/destinatairePrenom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/prenom"/>
+
+    <EditText
+        android:id="@+id/destinataireAdresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage"
+        android:hint="@string/adresse" />
+
+    <EditText
+        android:id="@+id/destinataireCodePostal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:hint="@string/codepostal" />
+
+    <EditText
+        android:id="@+id/destinataireVille"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage"
+        android:hint="@string/ville" />
+
+    <EditText
+        android:id="@+id/destinatairePays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textLongMessage"
+        android:hint="@string/pays" />
+
+    <Button
+        android:text="@string/buttonDestinataire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ajouterCeDestinataire"
+        android:layout_gravity="center"
+        style="@style/bouton" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background">#FFFFFF</color>
+
+    <!--Bouton suivant-->
+    <color name="boutonSuivantEnabled">#abb2ab</color>
+    <color name="boutonSuivantPressed">#68e26a</color>
+    <color name="boutonSuivantDisabled">#dce2dc</color>
+
+    <!--Bouton précédent-->
+    <color name="boutonPrecedentEnabled">#abb2ab</color>
+    <color name="boutonPrecedentPressed">#9cd2ed</color>
+    <color name="boutonPrecedentDisabled">#dce2dc</color>
+
+</resources>

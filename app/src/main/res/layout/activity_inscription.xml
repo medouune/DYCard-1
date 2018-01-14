@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="vertical"
+    android:id="@+id/activity_inscription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.simon.dycard.activities.InscriptionActivity"
+    android:background="@color/background">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
+        android:inputType="textPersonName"
+        android:hint="@string/pseudo"
+        android:ems="10"
+        android:id="@+id/inscription_editText_pseudo"
+        android:maxLines="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
+        android:inputType="textPassword"
+        android:hint="@string/mdp"
+        android:ems="10"
+        android:id="@+id/inscription_editText_password"
+        android:maxLines="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
+        android:inputType="textPassword"
+        android:hint="@string/mdpConfirm"
+        android:ems="10"
+        android:id="@+id/inscription_editText_password2"
+        android:maxLines="1" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:width="200dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email"
+        android:ems="10"
+        android:id="@+id/inscription_editText_email"
+        android:maxLines="1" />
+
+    <ImageView
+        android:id="@+id/captcha"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Réponse"
+        android:inputType="number"
+        android:width="200dp"
+        android:ems="10"
+        android:id="@+id/ansUser" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Changer image"
+        style="@style/bouton"
+        android:onClick="changer"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="238dp"
+        android:text="@string/inscription"
+        android:layout_height="wrap_content"
+        android:onClick="sendInscription"
+        android:layout_gravity="center_horizontal"
+        style="@style/bouton"/>
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>
+</ScrollView>

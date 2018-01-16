@@ -130,6 +130,8 @@ public class Choose_photo_activity extends AppCompatActivity {
             commande.setFormat(choix);
             commande.setPhoto(result);
             commande.setPrix(prix);
+            MySingleton.getInstance(Choose_photo_activity.this).setCommande(commande);
+
             Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
             startActivity(intent);
             finish();

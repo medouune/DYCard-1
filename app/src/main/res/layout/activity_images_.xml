@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
+    //mise en page contient plusieurs vues
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_images_"
@@ -16,6 +17,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.simon.dycard.activities.Images_Activity"
     android:background="@color/background">
+//une id pour y avoir accès  cette vue
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_list"
+        android:layout_height="match_parent"/>
 
 
     <ProgressBar

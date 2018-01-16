@@ -14,5 +14,7 @@
     <color name="boutonPrecedentEnabled">#abb2ab</color>
     <color name="boutonPrecedentPressed">#9cd2ed</color>
     <color name="boutonPrecedentDisabled">#dce2dc</color>
-
+    <!--couleur de sélection -->
+    <color name="pressed_color">#5bc7d2</color>
+    <color name="default_color">#ccc</color>
 </resources>

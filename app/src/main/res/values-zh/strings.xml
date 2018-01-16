@@ -61,6 +61,9 @@
     <string name="selectionne_les_destinataires">选择收件人（可多选）</string>
     <string name="supprimer_ces_destinataires_de_mes_historiques">删除收件人（可多选） </string>
     <string name="ajouter_nouveau_destinataire">添加新的收件人</string>
+    <string name="supprimer_destinataire">supprimer un destinataire</string>
+    <string name="envoyer_destinataires">envoyer un destinataire</string>
+
 
     <!--activity photo-->
     <string name="choisir_photo">选择我的照片</string>
@@ -80,6 +83,10 @@
 
     <!--activity images-->
     <string name="choisir_forme">请选择我的明信片形状</string>
+
+    <!--Activiter liste destinataires-->
+    <string name="chargementDest">Chargement de vos destinataires</string>
+
 
 
     <!--Texte Activity-->

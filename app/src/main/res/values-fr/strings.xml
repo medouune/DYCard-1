@@ -60,8 +60,13 @@
 <string name="selectionne_les_destinataires">Sélectionne le(s) destinataire(s)</string>
 <string name="supprimer_ces_destinataires_de_mes_historiques">Supprimer ce(s) destinataire(s) </string>
 <string name="ajouter_nouveau_destinataire">Ajouter un nouveau destinataire</string>
+    <string name="supprimer_destinataire">supprimer un destinataire</string>
+    <string name="envoyer_destinataires">envoyer un destinataire</string>
+    <string name="envoyer_ma_carte_ces_destinataires">envoyer carte aux destinataires</string>
 
-<!--activity photo-->
+
+
+    <!--activity photo-->
 <string name="choisir_photo">Choisis ta photo</string>
 <string name="importerImage">Sélectionner l\'image à importer</string>
 <string name="format">Choisis le format de la carte : </string>

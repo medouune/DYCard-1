@@ -1,17 +1,24 @@
 package com.example.simon.dycard.activities;
 
+
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.simon.dycard.R;
 import com.example.simon.dycard.model.Commande;
 import com.example.simon.dycard.util.MySingleton;
+import com.github.siyamed.shapeimageview.mask.PorterShapeImageView;
 import com.paypal.android.sdk.payments.PayPalConfiguration;
 import com.paypal.android.sdk.payments.PayPalPayment;
 import com.paypal.android.sdk.payments.PayPalService;
@@ -28,21 +35,48 @@ public class activity_validation extends AppCompatActivity {
     Intent m_service;
     int m_paypalRequestCode = 999; // or any number you want
 
-    private ImageView faceAvant;
+    private ImageView faceAvant, formeFinale;
     private TextView texte;
     private Commande commande;
+    ListView listView;
+   // int forme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_validation);
 
+
+
         commande = MySingleton.getInstance(activity_validation.this).getCommande();
+        //forme=R.drawable
+        //commande.getForme();
+        //int forme pour récupérer la fore R.drawable en fonctin de ce que la personne a choisi
+        //bcommande.getforme(lien vers la forme choisie au départ)
 
         faceAvant = (ImageView) findViewById(R.id.activity_validation_photo);
+        formeFinale = (ImageView) findViewById(R.id.forme);
         texte = (TextView) findViewById(R.id.activity_validation_texte);
 
-        faceAvant.setImageBitmap(commande.getPhoto());
+       // listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+         //   @Override
+          //  public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+          //  }
+      //  })
+        Bitmap shape= BitmapFactory.decodeResource(getResources(),R.drawable.chat_v2);
+        //redonner une taille à un bitmap
+        shape = Bitmap.createScaledBitmap(shape,255,255,false);
+
+
+        Bitmap image = Bitmap.createScaledBitmap(commande.getPhoto(),255,255, false);
+       faceAvant.setBackground(new BitmapDrawable(getResources(), image));
+        //faceAvant.getLayoutParams().height = shape.getHeight();
+        //faceAvant.getLayoutParams().width = shape.getWidth();
+        faceAvant.setImageBitmap(shape);
+
+
+        //formeFinale.setBackground(getResources().getDrawable(R.drawable.chat_v2));
         texte.setText(commande.getTexte());
 
         m_configuration = new PayPalConfiguration()

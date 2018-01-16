@@ -11,6 +11,8 @@ import com.example.simon.dycard.R;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     private AlertDialog.Builder builder;
 
     @Override

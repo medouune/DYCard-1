@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="casual"
             android:gravity="center"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:id="@+id/textView2"
             android:layout_gravity="center"/>
@@ -45,11 +45,22 @@
             android:textSize="18sp"
             android:textStyle="normal|bold"
             android:textColor="@android:color/black" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/activity_validation_photo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/activity_validation_photo"
+                android:layout_width="255dp"
+                android:layout_height="255dp" />
+
+            <ImageView
+                android:id="@+id/forme"
+                android:layout_width="320dp"
+                android:layout_height="220dp" />
+
+        </RelativeLayout>
+
 
         <TextView
             android:text="@string/face_arriere"

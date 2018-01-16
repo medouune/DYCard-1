@@ -19,6 +19,7 @@ public class Images_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_images_);
 
+
         commande = MySingleton.getInstance(getApplicationContext()).getCommande();
 
     }

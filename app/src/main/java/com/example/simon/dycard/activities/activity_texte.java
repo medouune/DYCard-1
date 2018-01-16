@@ -50,7 +50,7 @@ public class activity_texte extends AppCompatActivity {
     }
 
     public void textePrecedent(View v) {
-        startActivity(new Intent(activity_texte.this, Choose_photo_activity.class));
+        startActivity(new Intent(activity_texte.this, activity_shape_photo.class));
         finish();
     }
 }

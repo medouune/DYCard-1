@@ -38,7 +38,9 @@ import java.util.Map;
 
 public class activity_destinataire extends AppCompatActivity {
 
+
     private String RECUP_DEST_URL = "http://192.168.0.11/DYCard/WebServiceDYCard/recuperer_destinataires.php";
+
     private Context mContext;
     private ListView lv;
     private Commande commande;

@@ -35,7 +35,14 @@
             android:fontFamily="casual"
             android:id="@+id/textView4"/>
 
-        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        <!-- Image Cropper fill the remaining available height -->
+       <com.theartofdev.edmodo.cropper.CropImageView
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+       <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
             android:id="@+id/photo"
             app:siShape="@drawable/shape_rounded_rectangle"
             android:layout_width="wrap_content"

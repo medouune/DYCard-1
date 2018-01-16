@@ -21,6 +21,7 @@ import com.example.simon.dycard.R;
 import com.example.simon.dycard.util.MySingleton;
 import com.github.siyamed.shapeimageview.mask.PorterImageView;
 import com.github.siyamed.shapeimageview.mask.PorterShapeImageView;
+import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.io.IOException;
 
@@ -31,24 +32,25 @@ public class activity_shape_photo extends AppCompatActivity {
     private String choix;
     private double prix;
     private Commande commande;
+    private CropImageView cropImageView;
 
     private int PICK_IMAGE_REQUEST = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_choose_photo);
+        setContentView(R.layout.activity_shape_photo);
 
         commande = MySingleton.getInstance(activity_shape_photo.this).getCommande();
 
-        imageView = (PorterShapeImageView)findViewById(R.id.photo);
-
-        if(commande.getPhoto()!=null){
+        imageView = (PorterImageView) findViewById(R.id.photo);
+        cropImageView =(CropImageView) findViewById(R.id.cropImageView);
+        if (commande.getPhoto() != null) {
             bitmap = commande.getPhoto();
-            imageView.setImageBitmap(bitmap);
+            cropImageView.setImageBitmap(bitmap);
         }
 
-
-        if(commande.getFormat()!=null){
+        if (commande.getFormat() != null) {
             choix = commande.getFormat();
         }
 
@@ -60,8 +62,8 @@ public class activity_shape_photo extends AppCompatActivity {
 
     public void suivantActivityTexte(View v) {
         if(bitmap != null && choix != null) {
-            Bitmap result = ((BitmapDrawable)imageView.getDrawable()).getBitmap();
-            commande.setPhoto(result);
+            Bitmap cropped = cropImageView.getCroppedImage();
+            commande.setPhoto(cropped);
             Intent intent = new Intent(activity_shape_photo.this, activity_texte.class);
             startActivity(intent);
             finish();

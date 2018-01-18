@@ -39,7 +39,7 @@ public class activity_validation extends AppCompatActivity {
     private TextView texte;
     private Commande commande;
     ListView listView;
-   // int forme;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +64,9 @@ public class activity_validation extends AppCompatActivity {
 
           //  }
       //  })
-        Bitmap shape= BitmapFactory.decodeResource(getResources(),R.drawable.chat_v2);
+
+//récupérer la commande finqale (par rapport à la forme
+        Bitmap shape= BitmapFactory.decodeResource(getResources(),commande.getFormes());
         //redonner une taille à un bitmap
         shape = Bitmap.createScaledBitmap(shape,255,255,false);
 

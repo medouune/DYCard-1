@@ -15,18 +15,19 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 
 import com.example.simon.dycard.model.Commande;
-import com.github.siyamed.shapeimageview.ShapeImageView;
+//import com.github.siyamed.shapeimageview.ShapeImageView;
 
 import com.example.simon.dycard.R;
 import com.example.simon.dycard.util.MySingleton;
-import com.github.siyamed.shapeimageview.mask.PorterImageView;
-import com.github.siyamed.shapeimageview.mask.PorterShapeImageView;
+//import com.github.siyamed.shapeimageview.mask.PorterImageView;
+//import com.github.siyamed.shapeimageview.mask.PorterShapeImageView;
 
 import java.io.IOException;
 
 public class Choose_photo_activity extends AppCompatActivity {
 
-    private PorterImageView imageView;
+    //private PorterImageView imageView;
+    private ImageView imageView;
     private Bitmap bitmap;
     private String choix;
     private double prix;
@@ -41,7 +42,7 @@ public class Choose_photo_activity extends AppCompatActivity {
 
         commande = MySingleton.getInstance(Choose_photo_activity.this).getCommande();
 
-        imageView = (PorterShapeImageView)findViewById(R.id.photo);
+        imageView = (ImageView)findViewById(R.id.photo);
 
         polaroid = (RadioButton)findViewById(R.id.polaroid);
         A6 = (RadioButton)findViewById(R.id.A6);
@@ -130,8 +131,6 @@ public class Choose_photo_activity extends AppCompatActivity {
             commande.setFormat(choix);
             commande.setPhoto(result);
             commande.setPrix(prix);
-            MySingleton.getInstance(Choose_photo_activity.this).setCommande(commande);
-
             Intent intent = new Intent(Choose_photo_activity.this, activity_texte.class);
             startActivity(intent);
             finish();

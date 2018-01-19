@@ -27,7 +27,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class activity_ajoutdestinataire extends AppCompatActivity {
-
+//déclaration des variables pour récupérer nom,prénom, adresse,code potal, ville, pays du destinataire
     private String AJOUT_DEST_URL = "http://192.168.0.11/DYCard/WebServiceDYCard/enregistrer_destinataire.php";
     private EditText Nom, Prenom, Adresse, CodePostal, Ville, Pays;
     private String nom, prenom, adresse, codePostal, ville, pays;
@@ -36,6 +36,8 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
 
 
     @Override
+    //initialise l'activité et
+    // permet de désérialiser le fichier xml d'affichage afin d'en récupérer les vues qui le composent
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajoutdestinataire);
@@ -60,7 +62,7 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
         ville = Ville.getText().toString();
         pays = Pays.getText().toString();
 
-
+//Si un des champs n'est pas rempli on a ce message
         if(nom.equals("") || prenom.equals("") || adresse.equals("") || codePostal.equals("") ||
                 ville.equals("") || pays.equals("")) {
             Toast.makeText(mContext, getResources().getString(R.string.alerteDestinataire), Toast.LENGTH_SHORT).show();
@@ -69,15 +71,18 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
+                            //
                             try{
                                 JSONArray jsonArray = new JSONArray(response);
                                 JSONObject jsonObject = jsonArray.getJSONObject(0);
                                 String code = jsonObject.getString("status");
+                                //Si le statut est ok, le destinataire est ajouté à la bdd
                                 if(code.equals("OK")) {
                                     Toast.makeText(activity_ajoutdestinataire.this, R.string.ajoutDestSucces, Toast.LENGTH_SHORT).show();
                                     finish();
                                 }
                                 else {
+                                    //si il existe déjà dans la bdd
                                     Toast.makeText(mContext, getResources().getString(R.string.ajoutDestEchec), Toast.LENGTH_SHORT).show();
                                 }
                             }catch (JSONException e) {
@@ -86,12 +91,14 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
 
                         }
                     }, new Response.ErrorListener() {
+                //Si il n' ya pas de connexion avec la base de données, on a cette erreur qui s'affiche
                 @Override
                 public void onErrorResponse(VolleyError error) {
                     Toast.makeText(mContext, getResources().getString(R.string.erreurConnexion), Toast.LENGTH_SHORT).show();
                 }
             }){
                 @Override
+                //récupérer les différents paramètres dans une liste
                 protected Map<String, String> getParams() throws AuthFailureError {
                     Map<String, String> params = new HashMap<>();
                     params.put("nom", nom);
@@ -110,7 +117,7 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
 
 
     }
-
+//permet de créer une alerte confirmant l'envoi des données
     public void displayAlert(final String message) {
         builder.setMessage(message);
         builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {

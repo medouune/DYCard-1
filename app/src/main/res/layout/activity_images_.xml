@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-
-  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_images_"
     android:layout_width="match_parent"
@@ -17,6 +16,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.simon.dycard.activities.Images_Activity"
     android:background="@color/background">
+//une id pour y avoir accès  cette vue
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_list"
+        android:layout_height="match_parent"/>
 
 
     <ProgressBar
@@ -34,8 +40,7 @@
         android:fontFamily="casual"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:id="@+id/textView4"
-       />
+        android:id="@+id/textView4" />
 
       <ImageButton
           android:id="@+id/button1"
@@ -62,7 +67,6 @@
         android:layout_gravity="center"
         android:background="@drawable/ovale"
         android:onClick="ovale"/>
-    <!-- android:background="@drawable/my_selector" -->
 
     <ImageButton
         android:layout_width="200dp"
@@ -99,7 +103,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
-    <!--android:layout_height="0dp" -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -115,9 +119,7 @@
         <Space
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_width="181dp"
-             />
-      <!--android:layout_width="0dp" -->
+            android:layout_width="181dp" />
 
         <Button
             android:text="@string/buttonSuivant"
@@ -125,10 +127,6 @@
             android:layout_height="wrap_content"
             android:onClick="imageSuivant"
             style="@style/boutonSuivant"/>
-
-
-
-
 
     </LinearLayout>
 

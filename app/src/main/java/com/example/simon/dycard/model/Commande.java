@@ -12,12 +12,12 @@ public class Commande {
 
     private User user;
     private String forme;
-    private int formes;
     private Bitmap photo;
     private String format;
     private String texte;
     private List<Integer> destinataires;
     private double prix;
+    private int formes;
 
     public Commande() {}
 
@@ -29,6 +29,13 @@ public class Commande {
         this.user = user;
     }
 
+    public int getFormes() {
+        return formes;
+    }
+
+    public void setFormes(int formes) {
+        this.formes = formes;
+    }
     public String getForme() {
         return forme;
     }

@@ -42,16 +42,16 @@ public class Images_Activity extends AppCompatActivity implements OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_recycler_view);
-        /* mButton1 =  findViewByIdcast(R.id.button1);
+        /*mButton1 =  findViewById(R.id.button1);
         mButton1.setOnClickListener(this);*/
         commande = MySingleton.getInstance(getApplicationContext()).getCommande();
 
         recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
 
         formesArrayList = new ArrayList<Integer>();
-        formesArrayList.add(R.drawable.chat);
-        formesArrayList.add(R.drawable.coeur);
-        formesArrayList.add(R.drawable.diamant);
+        formesArrayList.add(R.drawable.chat_v2);
+        formesArrayList.add(R.drawable.cadres);
+        formesArrayList.add(R.drawable.ov);
         formesArrayList.add(R.drawable.etoile);
 
         adapter = new ImageActivityAdapter(this, formesArrayList);
@@ -81,6 +81,7 @@ public class Images_Activity extends AppCompatActivity implements OnClickListene
         }));
     }
 
+
     @Override
     public void onClick(View v) {
         Button button = (Button) v;
@@ -88,8 +89,8 @@ public class Images_Activity extends AppCompatActivity implements OnClickListene
        // mButton1.setSelected(false);
 
         // change state
-       // button.setSelected(true);
-       // button.setPressed(false);
+        button.setSelected(true);
+        button.setPressed(false);
     }
     /*@SuppressWarnings("unchecked")
     private <T> T findViewByIdAndCast(int id) {
@@ -131,6 +132,7 @@ public class Images_Activity extends AppCompatActivity implements OnClickListene
     }
 
     public void imageSuivant(View v) {
+        //donner la commande
         Intent intent = new Intent(Images_Activity.this, Choose_photo_activity.class);
         MySingleton.getInstance(getApplicationContext()).setCommande(commande);
         startActivity(intent);

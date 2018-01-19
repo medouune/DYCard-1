@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,13 +39,14 @@ import java.util.Map;
 
 public class activity_destinataire extends AppCompatActivity {
 
-    private String RECUP_DEST_URL = "http://10.20.42.184/DYCard/WebServiceDYCard/recuperer_destinataires.php";
+    private String RECUP_DEST_URL = "http://192.168.1.10/WebServiceDYCard/recuperer_destinataires.php";
     private Context mContext;
     private ListView lv;
     private Commande commande;
     private EditText Prix;
 
     @Override
+    //methode
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_destinataire);
@@ -61,13 +63,17 @@ public class activity_destinataire extends AppCompatActivity {
         recupDest();
     }
 
+    /**
+     * @// TODO: 18/01/2018  
+     * @param dest
+     */
     public void majList(ArrayList<Destinataire> dest){
-        ArrayAdapter<Destinataire> adapter = new ArrayAdapter<>(mContext, R.layout.layout_destinataire, dest);
-        lv.setAdapter(adapter);
+      //  ArrayAdapter<Destinataire> adapter = new ArrayAdapter<>(mContext, R.layout.layout_destinataire, dest);
+        //lv.setAdapter(adapter);
     }
 
     public void recupDest(){
-        final ArrayList<Destinataire> destinataires = new ArrayList<>();
+         final ArrayList<Destinataire> destinataires = new ArrayList<>();
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, RECUP_DEST_URL,
                 new Response.Listener<String>() {
@@ -82,6 +88,7 @@ public class activity_destinataire extends AppCompatActivity {
                                 d.setAdresse(jsonObject.getString("adresse"));
                                 d.setPrenom(jsonObject.getString("prenom"));
                                 d.setNom(jsonObject.getString("nom"));
+                                Log.e("log pour dest",d.toString());
                                 destinataires.add(d);
                             }
 

@@ -3,6 +3,7 @@ package com.example.simon.dycard.activities;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 
@@ -32,7 +33,7 @@ public class activity_texte extends AppCompatActivity {
     public void texteSuivant(View v) {
 
         commande.setTexte(Texte.getText().toString());
-
+        MySingleton.getInstance(activity_texte.this).setCommande(commande);
         Intent intent = new Intent(activity_texte.this, activity_destinataire.class);
         startActivity(intent);
         finish();

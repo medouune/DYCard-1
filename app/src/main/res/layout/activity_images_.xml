@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_images_"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -16,6 +16,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.simon.dycard.activities.Images_Activity"
     android:background="@color/background">
+//une id pour y avoir accès  cette vue
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_list"
+        android:layout_height="match_parent"/>
 
 
     <ProgressBar
@@ -35,21 +42,26 @@
         android:textStyle="bold"
         android:id="@+id/textView4" />
 
-    <ImageButton
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:background="@drawable/cadreplantes"
-        android:onClick="cadreplantes"/>
+      <ImageButton
+          android:id="@+id/button1"
+          android:layout_width="500dp"
+          android:layout_height="500dp"
+          android:layout_gravity="center"
+          android:src="@drawable/cadreplantes"
+          android:background="@drawable/my_selector"
+          />
+   <!--android:background="@drawable/cadreplantes"-->
+    <!-- android:onClick="cadreplantes" -->
 
     <ImageButton
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:background="@drawable/chat"
         android:onClick="chat"/>
 
     <ImageButton
+        android:id="@+id/ib1"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
@@ -58,7 +70,7 @@
 
     <ImageButton
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="56dp"
         android:layout_gravity="center"
         android:background="@drawable/diamant"
         android:onClick="diamant"/>
@@ -73,8 +85,8 @@
 
 
     <ImageButton
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="616dp"
+        android:layout_height="133dp"
         android:layout_gravity="center"
         android:background="@drawable/coeur"
         android:onClick="coeur"/>

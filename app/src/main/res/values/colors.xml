@@ -15,4 +15,14 @@
     <color name="boutonPrecedentPressed">#9cd2ed</color>
     <color name="boutonPrecedentDisabled">#dce2dc</color>
 
+    <drawable name="blue_color">#1703F4</drawable>
+    <drawable name="red_color">#F40303</drawable>
+    <drawable name="green_color">#FAB1</drawable>
+    <drawable name="button_pressed_yellow">#FFFF00 </drawable>
+    <drawable name="button_focused_orange">#ED7F10 </drawable>
+    <drawable name="button_normal_green">#008000 </drawable>
+
+
+
+
 </resources>

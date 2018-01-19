@@ -6,10 +6,15 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ImageButton;
 
 import com.example.simon.dycard.R;
 
+
 public class MainActivity extends AppCompatActivity {
+
+
 
     private AlertDialog.Builder builder;
 

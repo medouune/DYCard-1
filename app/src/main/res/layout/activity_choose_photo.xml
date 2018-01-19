@@ -44,11 +44,17 @@
         android:background="@android:drawable/btn_default"
         style="@style/bouton" />
 
-        <com.github.siyamed.shapeimageview.mask.PorterShapeImageView
+        <ImageView
+            android:id="@+id/photo"
+            android:src="@drawable/shape_rounded_rectangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--<com.github.siyamed.shapeimageview.mask.PorterShapeImageView
             android:id="@+id/photo"
             app:siShape="@drawable/shape_rounded_rectangle"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"/>-->
 
     <Space
         android:layout_width="wrap_content"

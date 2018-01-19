@@ -83,11 +83,17 @@
 
     <!--Destinataire Activity-->
     <string name="supprimer_destinataire">Delete this(these) recipient(s)</string>
+    <string name="envoyer_ma_carte_ces_destinataires">Send </string>
+    <string name="supprimer_ces_destinataires_de_mes_historiques">delete</string>
+
     <string name="prix_commande">The price for your order is :</string>
     <string name="envoyer_destinataires">Send my postcard</string>
     <string name="selectionne_les_destinataires">Select a recipient(s)</string>
     <string name="ajouter_nouveau_destinataire">Add a new recipient</string>
     <string name="chargementDest">Loading recipient...</string>
+    <string name="envoyer_ma_carte_ces_destinataires">envoyer carte aux destinataires</string>
+    <string name="supprimer_ces_destinataires_de_mes_historiques">supprimer destinataires</string>
+
 
 
     <!--Ajout destinataire Activity-->

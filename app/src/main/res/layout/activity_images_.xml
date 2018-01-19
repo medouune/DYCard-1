@@ -4,11 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_images_"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -33,32 +34,39 @@
         android:fontFamily="casual"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:id="@+id/textView4" />
+        android:id="@+id/textView4"
+       />
+
+      <ImageButton
+          android:id="@+id/button1"
+          android:layout_width="500dp"
+          android:layout_height="500dp"
+          android:layout_gravity="center"
+          android:src="@drawable/cadreplantes"
+          android:background="@drawable/my_selector"
+          />
+   <!--android:background="@drawable/cadreplantes"-->
+    <!-- android:onClick="cadreplantes" -->
 
     <ImageButton
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:background="@drawable/cadreplantes"
-        android:onClick="cadreplantes"/>
-
-    <ImageButton
-        android:layout_width="200dp"
+        android:layout_width="300dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:background="@drawable/chat"
         android:onClick="chat"/>
 
     <ImageButton
+        android:id="@+id/ib1"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_gravity="center"
         android:background="@drawable/ovale"
         android:onClick="ovale"/>
+    <!-- android:background="@drawable/my_selector" -->
 
     <ImageButton
         android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_height="56dp"
         android:layout_gravity="center"
         android:background="@drawable/diamant"
         android:onClick="diamant"/>
@@ -73,8 +81,8 @@
 
 
     <ImageButton
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="616dp"
+        android:layout_height="133dp"
         android:layout_gravity="center"
         android:background="@drawable/coeur"
         android:onClick="coeur"/>
@@ -91,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
-
+    <!--android:layout_height="0dp" -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -107,7 +115,9 @@
         <Space
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_width="181dp" />
+            android:layout_width="181dp"
+             />
+      <!--android:layout_width="0dp" -->
 
         <Button
             android:text="@string/buttonSuivant"
@@ -115,6 +125,10 @@
             android:layout_height="wrap_content"
             android:onClick="imageSuivant"
             style="@style/boutonSuivant"/>
+
+
+
+
 
     </LinearLayout>
 

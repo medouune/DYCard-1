@@ -12,6 +12,7 @@ public class Commande {
 
     private User user;
     private String forme;
+    private int formes;
     private Bitmap photo;
     private String format;
     private String texte;
@@ -34,6 +35,14 @@ public class Commande {
 
     public void setForme(String forme) {
         this.forme = forme;
+    }
+
+    public int getFormes() {
+        return formes;
+    }
+
+    public void setFormes(int formes) {
+        this.formes = formes;
     }
 
     public Bitmap getPhoto() {

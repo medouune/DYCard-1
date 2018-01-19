@@ -33,7 +33,7 @@ public class InscriptionActivity extends AppCompatActivity {
 
     private EditText Pseudo, Password, Password2, Email, ET;
     private String pseudo, password, password2, email, ansCaptcha, ansUser;
-    private String REGISTER_URL = "http://10.20.42.184/DYCard/WebServiceDYCard/register.php";
+    private String REGISTER_URL = "http://192.168.0.11/DYCard/WebServiceDYCard/register.php";
     private AlertDialog.Builder builder;
     private Context mContext;
     private ImageView im;

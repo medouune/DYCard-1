@@ -84,6 +84,8 @@
 
 <!--activity images-->
 <string name="choisir_forme">Choisis ta forme</string>
+    <!--activity shape photo-->
+    <string name="modifier_photo">Modifie ta photo</string>
 
 
 <!--Texte Activity-->

@@ -33,6 +33,7 @@
         <activity android:name=".activities.activity_ajoutdestinataire" />
         <activity android:name=".activities.activity_shape_photo" />
         <activity android:name=".activities.activity_texte" />
-        <activity android:name=".activities.Choose_photo_activity" />    </application>
+        <activity android:name=".activities.Choose_photo_activity" />
+    </application>
 
 </manifest>

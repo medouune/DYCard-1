@@ -2,25 +2,20 @@ package com.example.simon.dycard.activities;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.ArrayAdapter;
+import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ListView;
-import android.app.Activity;
-import android.widget.RelativeLayout;
 import android.widget.Toast;
-import android.widget.TextView;
+
 import com.example.simon.dycard.R;
 import com.example.simon.dycard.model.Commande;
 import com.example.simon.dycard.util.MySingleton;
-import android.view.View.OnClickListener;
-import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 
@@ -50,8 +45,8 @@ public class Images_Activity extends AppCompatActivity implements OnClickListene
 
         formesArrayList = new ArrayList<Integer>();
         formesArrayList.add(R.drawable.chat_v2);
-        formesArrayList.add(R.drawable.cadres);
-        formesArrayList.add(R.drawable.ov);
+        formesArrayList.add(R.drawable.coeur);
+        formesArrayList.add(R.drawable.diamant);
         formesArrayList.add(R.drawable.etoile);
 
         adapter = new ImageActivityAdapter(this, formesArrayList);
@@ -69,10 +64,36 @@ public class Images_Activity extends AppCompatActivity implements OnClickListene
             @Override
             public void onClick(View view, int position) {
 
+                for (int i=0; i<recyclerView.getChildCount();i++)
+                {
+                    recyclerView.getChildAt(i).setBackgroundColor(Color.WHITE);
+                }
+
                 Toast.makeText(Images_Activity.this, ""+position, Toast.LENGTH_SHORT).show();
                 commande.setFormes(formesArrayList.get(position));
                 view.setBackgroundColor(Color.BLUE);
             }
+          /*  public void onLongPress(MotionEvent e) {
+
+                View view =
+                        recyclerView.findChildViewUnder(e.getX(), e.getY());
+                if (actionMode  != null) {
+                    return;
+                }
+                actionMode =
+                        startActionMode(ImageActivityAdapter.this);
+                int idx = recyclerView.getChildPosition(view);
+                myToggleSelection(idx);
+                super.onLongPress(e);
+            }
+
+            private void myToggleSelection(int idx) {
+                adapter.toggleSelection(idx);
+                String title = getString(
+                        R.string.selected_count,
+                        adapter.getSelectedItemCount());
+                actionMode.setTitle(title);
+            }*/
 
             @Override
             public void onLongClick(View view, int position) {

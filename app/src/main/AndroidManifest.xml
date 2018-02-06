@@ -5,6 +5,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-sdk android:minSdkVersion="INSERT_YOUR_DESIRED_minSdkVersion_HERE" tools:overrideLibrary="com.paypal.android.sdk.payments"/>
 
@@ -29,6 +31,7 @@
         <activity android:name=".activities.Etape1_Activity" />
         <activity android:name=".activities.Images_Activity" />
         <activity android:name=".activities.activity_ajoutdestinataire" />
+        <activity android:name=".activities.activity_shape_photo" />
         <activity android:name=".activities.activity_texte" />
         <activity android:name=".activities.Choose_photo_activity" />
     </application>

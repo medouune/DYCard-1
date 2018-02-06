@@ -7,6 +7,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -26,14 +27,16 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class activity_ajoutdestinataire extends AppCompatActivity {
+public class activity_ajoutdestinataire extends AppCompatActivity{
+
+    private String AJOUT_DEST_URL = "http://192.168.1.10/WebServiceDYCard/enregistrer_destinataire.php";
 //déclaration des variables pour récupérer nom,prénom, adresse,code potal, ville, pays du destinataire
-    private String AJOUT_DEST_URL = "http://192.168.0.11/DYCard/WebServiceDYCard/enregistrer_destinataire.php";
+
     private EditText Nom, Prenom, Adresse, CodePostal, Ville, Pays;
     private String nom, prenom, adresse, codePostal, ville, pays;
     private Context mContext;
     private AlertDialog.Builder builder;
-
+    private Button btnAjout;
 
     @Override
     //initialise l'activité et
@@ -51,6 +54,10 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
         CodePostal = (EditText)findViewById(R.id.destinataireCodePostal);
         Ville = (EditText)findViewById(R.id.destinataireVille);
         Pays = (EditText)findViewById(R.id.destinatairePays);
+
+        btnAjout = new Button(this);
+        btnAjout = (Button)findViewById(R.id.btn_addRecipient);
+        //btnAjout.setOnClickListener(this);
     }
 
     public void ajouterCeDestinataire(View v) {
@@ -128,5 +135,11 @@ public class activity_ajoutdestinataire extends AppCompatActivity {
         });
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
+    }
+
+    public void onClick(View v) {
+        if(v==btnAjout) {
+            Toast.makeText(this, "action bouton", Toast.LENGTH_SHORT).show();
+        }
     }
 }

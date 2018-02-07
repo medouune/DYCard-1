@@ -65,20 +65,13 @@ public class activity_validation extends AppCompatActivity {
           //  }
       //  })
 
-//récupérer la commande finqale (par rapport à la forme
-        Bitmap shape= BitmapFactory.decodeResource(getResources(),commande.getFormes());
+        //récupérer la commande finale (par rapport à la forme
+        Bitmap shape = BitmapFactory.decodeResource(getResources(),commande.getFormes());
         //redonner une taille à un bitmap
-        shape = Bitmap.createScaledBitmap(shape,255,255,false);
-
-
-        Bitmap image = Bitmap.createScaledBitmap(commande.getPhoto(),255,255, false);
-       faceAvant.setBackground(new BitmapDrawable(getResources(), image));
-        //faceAvant.getLayoutParams().height = shape.getHeight();
-        //faceAvant.getLayoutParams().width = shape.getWidth();
+        shape = Bitmap.createScaledBitmap(shape,337,238,false);
+        Bitmap image = Bitmap.createScaledBitmap(commande.getPhoto(),337,238, false);
+        faceAvant.setBackground(new BitmapDrawable(getResources(), image));
         faceAvant.setImageBitmap(shape);
-
-
-        //formeFinale.setBackground(getResources().getDrawable(R.drawable.chat_v2));
         texte.setText(commande.getTexte());
 
         m_configuration = new PayPalConfiguration()

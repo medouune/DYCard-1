@@ -87,7 +87,8 @@
     <!--Activiter liste destinataires-->
     <string name="chargementDest">Chargement de vos destinataires</string>
 
-
+    <!--activity shape photo-->
+    <string name="modifier_photo">Update your photo</string>
 
     <!--Texte Activity-->
     <string name="ecris_ton_texte">输入文字 : </string>

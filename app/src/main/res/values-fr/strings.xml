@@ -111,15 +111,12 @@
     <string name="ajoutDestSucces">Destinataire ajouté </string>
 
 
-
-
 <!--popup destinataire-->
 <string name="popupDestinataire">Veuillez sélectionner au moins un destinataire</string>
 <string name="ok">Ok</string>
 <string name="popupSupprimerDestinataire">Êtes-vous sûr(e) de vouloir supprimer ce(s) destinataire(s)?</string>
 <string name="yes">Oui</string>
 <string name="no">Non</string>
-
 
 
 <!--validation-->
@@ -131,6 +128,7 @@
 <string name="modifier">Modifier</string>
 <string name="paiement">Accéder au paiement</string>
     <string name="erreurConnexion">Vérifier votre connexion Internet</string>
+
 
     <string name="termsOfUse">
 

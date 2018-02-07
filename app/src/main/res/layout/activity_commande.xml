@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:scrollbars="vertical"
         android:id="@+id/activity_validation"
@@ -51,13 +51,13 @@
 
             <ImageView
                 android:id="@+id/activity_validation_photo"
-                android:layout_width="337dp"
-                android:layout_height="237dp" />
+                android:layout_width="255dp"
+                android:layout_height="255dp" />
 
             <ImageView
                 android:id="@+id/forme"
-                android:layout_width="337dp"
-                android:layout_height="237dp" />
+                android:layout_width="320dp"
+                android:layout_height="220dp" />
 
         </RelativeLayout>
 
@@ -117,7 +117,7 @@
                 android:text="@string/paiement"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="payer"
+                android:onClick="envoyer"
                 style="@style/boutonSuivant"/>
         </LinearLayout>
 

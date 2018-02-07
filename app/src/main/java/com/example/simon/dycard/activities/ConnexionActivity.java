@@ -29,7 +29,7 @@ public class ConnexionActivity extends AppCompatActivity {
 
     private EditText Pseudo, Password;
     private String pseudo, password;
-    private String LOGIN_URL = "http://192.168.1.10/WebServiceDYCard/login.php";
+    private String LOGIN_URL = "http://dycardfrcw.cluster023.hosting.ovh.net/WebServiceDYCard/login.php";
     private AlertDialog.Builder builder;
 
     @Override

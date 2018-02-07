@@ -39,7 +39,7 @@ import java.util.Map;
 
 public class activity_destinataire extends AppCompatActivity {
 
-    private String RECUP_DEST_URL = "http://192.168.1.10/WebServiceDYCard/recuperer_destinataires.php";
+    private String RECUP_DEST_URL = "http://dycardfrcw.cluster023.hosting.ovh.net/WebServiceDYCard/recuperer_destinataires.php";
     private Context mContext;
     private ListView lv;
     private Commande commande;

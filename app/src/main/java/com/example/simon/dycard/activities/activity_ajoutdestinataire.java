@@ -29,7 +29,7 @@ import java.util.Map;
 
 public class activity_ajoutdestinataire extends AppCompatActivity{
 
-    private String AJOUT_DEST_URL = "http://192.168.1.10/WebServiceDYCard/enregistrer_destinataire.php";
+    private String AJOUT_DEST_URL = "http://dycardfrcw.cluster023.hosting.ovh.net/WebServiceDYCard/enregistrer_destinataire.php";
 //déclaration des variables pour récupérer nom,prénom, adresse,code potal, ville, pays du destinataire
 
     private EditText Nom, Prenom, Adresse, CodePostal, Ville, Pays;

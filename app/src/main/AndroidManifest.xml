@@ -34,6 +34,7 @@
         <activity android:name=".activities.activity_shape_photo" />
         <activity android:name=".activities.activity_texte" />
         <activity android:name=".activities.Choose_photo_activity" />
+        <activity android:name=".activities.activity_commande" />
     </application>
 
 </manifest>

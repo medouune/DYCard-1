@@ -29,13 +29,6 @@ public class Commande {
         this.user = user;
     }
 
-    public int getFormes() {
-        return formes;
-    }
-
-    public void setFormes(int formes) {
-        this.formes = formes;
-    }
     public String getForme() {
         return forme;
     }
